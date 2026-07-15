@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>K. G. Rhodes - Author</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">K. G. Rhodes</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="books.html">Books</a>
+      <a href="bio.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the world of K. G. Rhodes</h1>
+      <p>Dark fantasy. Haunted places. Characters who do not walk away unchanged.</p>
+      <a href="books.html" class="btn-primary">Explore the Ravenloft series</a>
+    </div>
+  </section>
+
+  <section class="highlight">
+    <h2>Featured Series - Ravenloft</h2>
+    <p>
+      Step into a realm of mist, memory, and monsters. The Ravenloft series blends
+      gothic atmosphere with character driven fantasy, following those who dare
+      to face the dark and the price it demands.
+    </p>
+    <a href="books.html" class="btn-secondary">View all books</a>
+  </section>
+
+  <section class="grid">
+    <div class="grid-item">
+      <h3>Meet the author</h3>
+      <p>
+        K. G. Rhodes writes dark, emotional fantasy from the Pacific Northwest,
+        drawing on wild landscapes, long winters, and the quiet places in between.
+      </p>
+      <a href="bio.html" class="link">Read full bio</a>
+    </div>
+    <div class="grid-item">
+      <h3>Events</h3>
+      <p>
+        Upcoming signings, releases, and appearances. Check back for details on
+        the Barnes & Noble signing and future events.
+      </p>
+      <a href="contact.html" class="link">Request an appearance</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> K. G. Rhodes. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
