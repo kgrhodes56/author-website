@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact K.G. Rhodes</title>
+    <style>
+        body { font-family: Georgia, serif; background: #111; color: #eee; margin: 0; padding: 40px; }
+        a { color: #c9a86a; text-decoration: none; }
+        header { text-align: center; margin-bottom: 60px; }
+        nav a { margin: 0 15px; }
+        .section { max-width: 800px; margin: auto; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Contact</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="books.html">Books</a>
+    </nav>
+</header>
+
+<div class="section">
+    <p>You can reach K.G. Rhodes at:</p>
+    <p><strong>Email:</strong> kgrhodes_author@yahoo.com</p>
+</div>
+
+</body>
+</html>
