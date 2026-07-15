@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Books - K. G. Rhodes</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">K. G. Rhodes</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="books.html" class="active">Books</a>
+      <a href="bio.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Books</h1>
+    <p class="intro">
+      Below are the titles in the Ravenloft series and related works. You can
+      update descriptions and links as new books release.
+    </p>
+
+    <section class="book-list">
+      <article class="book">
+        <div class="book-cover placeholder-cover">
+          <!-- Replace with actual cover image later -->
+          <span>Cover</span>
+        </div>
+        <div class="book-info">
+          <h2>Book One - Title Here</h2>
+          <p>
+            Short description of Book One. Introduce the main character, the
+            central conflict, and the tone of the story.
+          </p>
+          <p class="meta">
+            Format: Paperback / Ebook  
+            Publisher:  
+            Release date:
+          </p>
+          <div class="links">
+            <a href="#" class="btn-primary">Buy now</a>
+            <a href="#" class="btn-secondary">Read sample</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="book">
+        <div class="book-cover placeholder-cover">
+          <span>Cover</span>
+        </div>
+        <div class="book-info">
+          <h2>Book Two - Title Here</h2>
+          <p>
+            Short description of Book Two. Continue the arc, deepen the world,
+            and hint at the stakes that rise.
+          </p>
+          <p class="meta">
+            Format: Paperback / Ebook  
+            Publisher:  
+            Release date:
+          </p>
+          <div class="links">
+            <a href="#" class="btn-primary">Buy now</a>
+            <a href="#" class="btn-secondary">Read sample</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Add more books as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> K. G. Rhodes. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
