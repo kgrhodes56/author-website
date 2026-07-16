@@ -1,0 +1,115 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #222;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #3a1f47;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #3a1f47;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8b4ca3;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Section Titles */
+h2 {
+    color: #3a1f47;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Book List */
+.book-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f0e6f5;
+    border-left: 5px solid #3a1f47;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: #3a1f47;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #8b4ca3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #555;
+}
