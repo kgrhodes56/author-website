@@ -1,0 +1,22 @@
+
+const toggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".main-nav");
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+}
+
+const observer = new IntersectionObserver(
+  entries => entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add("visible");
+  }),
+  { threshold: 0.12 }
+);
+
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", () => nav?.classList.remove("open"));
+});
