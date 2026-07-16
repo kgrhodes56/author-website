@@ -47,7 +47,11 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: .09em;
   font-weight: 700;
 }
-.brand small {
+.brand small {.brand img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
   display: block;
   font-size: .54rem;
   letter-spacing: .28em;
