@@ -4,8 +4,53 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>The Library | K.G. Rhodes</title>
-  <meta name="description" content="Enter The Library and discover Ravenloft: The Calling by K.G. Rhodes.">
+  <meta name="description" content="Discover Ravenloft: The Calling by K.G. Rhodes in The Library.">
   <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .library-book-first{background:#050505;color:#f4ead9;min-height:100vh}
+    .library-book-first .library-intro{padding:48px 24px 34px;text-align:center;border-bottom:1px solid rgba(212,166,65,.45);background:linear-gradient(rgba(0,0,0,.76),rgba(0,0,0,.9)),url('assets/images/ravenloft-manor-hero.jpg') center 38%/cover no-repeat}
+    .library-book-first .library-intro .eyebrow{margin:0 0 8px;color:#e3b854;text-transform:uppercase;letter-spacing:.22em;font-weight:700;font-size:.82rem}
+    .library-book-first .library-intro h1{margin:0;color:#f0ca73;font-size:clamp(2.5rem,6vw,5.2rem);line-height:1}
+    .library-book-first .library-intro p:last-child{max-width:650px;margin:16px auto 0;font-size:clamp(1rem,1.7vw,1.25rem);font-style:italic;color:#f4ead9}
+    .library-book-first .book-spotlight{max-width:1180px;margin:0 auto;padding:64px 28px;display:grid;grid-template-columns:minmax(300px,46%) minmax(320px,54%);gap:56px;align-items:center}
+    .library-book-first .book-art{display:flex;align-items:center;justify-content:center;min-height:480px;background:radial-gradient(circle at center,rgba(124,25,32,.18),transparent 68%);border:1px solid rgba(212,166,65,.28);padding:26px}
+    .library-book-first .book-art img{display:block;width:100%;max-width:560px;height:auto;object-fit:contain;filter:drop-shadow(0 22px 26px rgba(0,0,0,.65))}
+    .library-book-first .book-copy .eyebrow{color:#dcb052;text-transform:uppercase;letter-spacing:.18em;font-weight:700;font-size:.8rem;margin:0 0 10px}
+    .library-book-first .book-copy h2{font-size:clamp(2.2rem,4vw,4rem);color:#f0ca73;margin:0 0 18px;line-height:1.05}
+    .library-book-first .hook{font-size:1.35rem;font-style:italic;color:#fff4df;border-left:3px solid #dcb052;padding-left:16px;margin:0 0 24px}
+    .library-book-first .book-copy p{font-size:1.08rem;line-height:1.75;color:#eee1cc}
+    .library-book-first .door-line{font-weight:700;color:#f0ca73;margin-top:22px}
+    .library-book-first .retailer-wrap{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .library-book-first .shop-card{border:1px solid rgba(212,166,65,.55);background:rgba(18,8,9,.88);padding:22px}
+    .library-book-first .shop-card h3{color:#f0ca73;margin:0 0 12px;font-size:1.35rem}
+    .library-book-first .shop-card ul{list-style:none;padding:0;margin:0 0 18px;line-height:1.8;color:#f0e5d4}
+    .library-book-first .shop-card .button{display:inline-block;text-align:center;width:100%;box-sizing:border-box}
+    .library-book-first .button.disabled{cursor:default;opacity:.7;pointer-events:none}
+    .library-book-first .why-section{border-top:1px solid rgba(212,166,65,.35);border-bottom:1px solid rgba(212,166,65,.35);padding:58px 24px;background:linear-gradient(180deg,#090506,#050505)}
+    .library-book-first .why-inner{max-width:1180px;margin:0 auto}
+    .library-book-first .section-kicker{text-align:center;color:#dcb052;text-transform:uppercase;letter-spacing:.18em;font-weight:700;font-size:.8rem;margin:0 0 8px}
+    .library-book-first .section-heading{text-align:center;color:#f0ca73;font-size:clamp(2rem,4vw,3.2rem);margin:0 0 34px}
+    .library-book-first .why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .library-book-first .why-card{border:1px solid rgba(212,166,65,.35);background:#100809;padding:24px 18px;min-height:150px}
+    .library-book-first .why-card h3{color:#f0ca73;margin:0 0 10px;font-size:1.15rem}
+    .library-book-first .why-card p{margin:0;line-height:1.55;color:#e9ddca}
+    .library-book-first .coming-next{padding:62px 24px;text-align:center;max-width:850px;margin:0 auto}
+    .library-book-first .coming-next h2{color:#f0ca73;font-size:clamp(2rem,4vw,3rem);margin:6px 0 16px}
+    .library-book-first .coming-next p{font-size:1.1rem;line-height:1.7;color:#eadfce}
+    .library-book-first .coming-soon{display:inline-block;margin-top:16px;border:1px solid #dcb052;padding:12px 22px;color:#f0ca73;text-transform:uppercase;letter-spacing:.12em}
+    @media (max-width:900px){
+      .library-book-first .book-spotlight{grid-template-columns:1fr;gap:34px;padding-top:44px}
+      .library-book-first .book-art{min-height:auto}
+      .library-book-first .retailer-wrap{grid-template-columns:1fr}
+      .library-book-first .why-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      .library-book-first .library-intro{padding:38px 18px 26px}
+      .library-book-first .book-spotlight{padding:38px 18px}
+      .library-book-first .why-grid{grid-template-columns:1fr}
+      .library-book-first .book-copy p{font-size:1rem}
+    }
+  </style>
 </head>
 <body>
 <header class="site-header">
@@ -23,78 +68,69 @@
   </div>
 </header>
 
-<main class="library-page">
-  <section class="page-hero library-hero">
-    <div class="container">
-      <p class="eyebrow">The journey begins</p>
-      <h1>The Library</h1>
-      <p class="hero-tagline">When Ravenloft calls, it doesn't open its doors. It opens yours.</p>
-    </div>
+<main class="library-book-first">
+  <section class="library-intro">
+    <p class="eyebrow">The Journey Begins</p>
+    <h1>The Library</h1>
+    <p>Every journey begins with a single page.</p>
   </section>
 
-  <section class="library-feature section-pad">
-    <div class="container book-feature-grid">
-      <div class="book-display" aria-label="Ravenloft The Calling book editions">
-        <img src="assets/images/ravenloft-approved-homepage.png" alt="Ravenloft: The Calling by K.G. Rhodes shown in print and digital editions">
-      </div>
-      <article class="story-panel">
-        <p class="eyebrow">Book One of the Ravenloft series</p>
-        <h2>Ravenloft: The Calling</h2>
-        <p>After Aunt Maggie’s sudden death, Ezra, Astrid, and Symphony Hawthorne return to Ravenloft Manor, the crumbling estate they barely remember. What awaits them is a dark journey into family secrets and a past that refuses to stay buried.</p>
-        <p>As the manor begins to reveal what has long been hidden, ancient magic awakens and forces beyond the Veil begin to stir. Ravenloft is not simply calling the Hawthorne family home. It is opening the doors within them.</p>
-        <p class="story-line">Every heart holds a hidden door. Ravenloft knows how to open it.</p>
-      </article>
+  <section class="book-spotlight">
+    <div class="book-art">
+      <img src="assets/images/ravenloft-book-formats.png" alt="Ravenloft: The Calling shown in hardcover and digital editions">
     </div>
-  </section>
 
-  <section class="retailer-section section-pad">
-    <div class="container">
-      <p class="eyebrow center">Choose your preferred retailer</p>
-      <h2 class="section-title">Available Wherever You Love to Read</h2>
-      <div class="retailer-grid">
-        <article class="retailer-card">
+    <article class="book-copy">
+      <p class="eyebrow">Book One of the Ravenloft Series</p>
+      <h2>Ravenloft: The Calling</h2>
+      <p class="hook">The house remembers. Even if they don’t.</p>
+      <p>After Aunt Maggie’s sudden death, Ezra, Astrid, and Symphony Hawthorne return to Ravenloft Manor, expecting only to settle an estate. Instead, they find a place filled with buried memories, family secrets, and questions that refuse to remain unanswered.</p>
+      <p>As Ravenloft begins revealing what has long been hidden, the family must decide how far they are willing to go for one another—and whether the manor has truly been waiting for them to come home.</p>
+      <p class="door-line">Some stories begin with a chapter. This one begins with a door.</p>
+
+      <div class="retailer-wrap" aria-label="Retailer options">
+        <article class="shop-card">
           <h3>Amazon</h3>
-          <ul class="format-list">
+          <ul>
             <li>Kindle eBook</li>
             <li>Paperback</li>
             <li>Hardcover</li>
           </ul>
           <a class="button" href="https://a.co/d/0cqHoxxt" target="_blank" rel="noopener noreferrer">Begin on Amazon</a>
         </article>
-        <article class="retailer-card">
+
+        <article class="shop-card">
           <h3>Barnes &amp; Noble</h3>
-          <ul class="format-list">
+          <ul>
             <li>NOOK eBook</li>
             <li>Paperback</li>
             <li>Hardcover</li>
           </ul>
-          <span class="button secondary" aria-disabled="true" style="cursor: default; opacity: 0.72;">Barnes &amp; Noble Listing Coming Soon</span>
+          <span class="button secondary disabled" aria-disabled="true">Listing Coming Soon</span>
         </article>
       </div>
-    </div>
+    </article>
   </section>
 
-  <section class="discover-section section-pad">
-    <div class="container">
-      <p class="eyebrow center">What awaits inside</p>
-      <h2 class="section-title">Why Enter Ravenloft?</h2>
-      <div class="discover-grid">
-        <article class="lore-card"><span class="lore-icon">🏰</span><h3>A Living Manor</h3><p>Ravenloft remembers, protects, and quietly guides those it chooses to call.</p></article>
-        <article class="lore-card"><span class="lore-icon">✨</span><h3>Ancient Magic</h3><p>Magic is not merely learned. It awakens, revealing gifts that have waited generations.</p></article>
-        <article class="lore-card"><span class="lore-icon">🗝</span><h3>Family Secrets</h3><p>Long-buried truths surface as the Hawthorne family confronts a hidden legacy.</p></article>
-        <article class="lore-card"><span class="lore-icon">🌑</span><h3>Ancient Darkness</h3><p>Beyond the Veil, patient forces wait for another chance to enter the living world.</p></article>
-        <article class="lore-card"><span class="lore-icon">❤️</span><h3>Hope</h3><p>Even in darkness, love, courage, and family can become the strongest forms of magic.</p></article>
+  <section class="why-section">
+    <div class="why-inner">
+      <p class="section-kicker">What Awaits Inside</p>
+      <h2 class="section-heading">Why Enter Ravenloft?</h2>
+      <div class="why-grid">
+        <article class="why-card"><h3>A Manor That Remembers</h3><p>An old house holds more than rooms. Ravenloft carries memories of its own.</p></article>
+        <article class="why-card"><h3>Family at the Heart</h3><p>The people we love shape every choice, every risk, and every act of courage.</p></article>
+        <article class="why-card"><h3>Hidden Secrets</h3><p>Buried truths have a way of returning when a family least expects them.</p></article>
+        <article class="why-card"><h3>The Calling</h3><p>Some places are inherited. Others seem to know exactly who belongs there.</p></article>
+        <article class="why-card"><h3>Hope in the Darkness</h3><p>Even when fear closes in, loyalty and love can become their own kind of magic.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="next-book section-pad">
-    <div class="container next-book-inner">
-      <p class="eyebrow">Continue the journey</p>
-      <h2>Book Two Is in Development</h2>
-      <p>The story is only beginning. New mysteries, new magic, and new doors are waiting to be opened.</p>
-      <p class="coming-soon">Coming Soon</p>
-    </div>
+  <section class="coming-next">
+    <p class="section-kicker">Continue the Journey</p>
+    <h2>The Story Continues</h2>
+    <p>The gates of Ravenloft have opened, but its story has only begun. Book Two of the Ravenloft series is currently in development.</p>
+    <span class="coming-soon">Coming Soon</span>
   </section>
 </main>
 
