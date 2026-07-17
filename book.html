@@ -12,14 +12,14 @@
     .library-book-first .library-intro .eyebrow{margin:0 0 8px;color:#e3b854;text-transform:uppercase;letter-spacing:.22em;font-weight:700;font-size:.82rem}
     .library-book-first .library-intro h1{margin:0;color:#f0ca73;font-size:clamp(2.5rem,6vw,5.2rem);line-height:1}
     .library-book-first .library-intro p:last-child{max-width:650px;margin:16px auto 0;font-size:clamp(1rem,1.7vw,1.25rem);font-style:italic;color:#f4ead9}
-    .library-book-first .book-spotlight{max-width:1180px;margin:0 auto;padding:64px 28px;display:grid;grid-template-columns:minmax(300px,46%) minmax(320px,54%);gap:56px;align-items:center}
-    .library-book-first .book-art{display:flex;align-items:center;justify-content:center;min-height:480px;background:radial-gradient(circle at center,rgba(124,25,32,.18),transparent 68%);border:1px solid rgba(212,166,65,.28);padding:26px}
-    .library-book-first .book-art img{display:block;width:100%;max-width:560px;height:auto;object-fit:contain;filter:drop-shadow(0 22px 26px rgba(0,0,0,.65))}
+    .library-book-first .book-spotlight{max-width:1180px;margin:0 auto;padding:64px 28px;display:grid;grid-template-columns:minmax(300px,46%) minmax(320px,54%);gap:48px;align-items:start}
+    .library-book-first .book-art{display:flex;align-items:center;justify-content:center;min-height:480px;background:radial-gradient(circle at center,rgba(124,25,32,.18),transparent 68%);border:1px solid rgba(212,166,65,.28);padding:18px}
+    .library-book-first .book-art img{display:block;width:100%;max-width:650px;height:auto;object-fit:contain;filter:drop-shadow(0 22px 26px rgba(0,0,0,.65))}
     .library-book-first .book-copy .eyebrow{color:#dcb052;text-transform:uppercase;letter-spacing:.18em;font-weight:700;font-size:.8rem;margin:0 0 10px}
     .library-book-first .book-copy h2{font-size:clamp(2.2rem,4vw,4rem);color:#f0ca73;margin:0 0 18px;line-height:1.05}
-    .library-book-first .hook{font-size:1.35rem;font-style:italic;color:#fff4df;border-left:3px solid #dcb052;padding-left:16px;margin:0 0 24px}
-    .library-book-first .book-copy p{font-size:1.08rem;line-height:1.75;color:#eee1cc}
-    .library-book-first .door-line{font-weight:700;color:#f0ca73;margin-top:22px}
+    .library-book-first .hook{font-size:1.4rem;font-style:italic;color:#fff4df;border-left:3px solid #dcb052;padding:12px 0 12px 18px;margin:0 0 30px;background:linear-gradient(90deg,rgba(212,166,65,.08),transparent)}
+    .library-book-first .book-copy p{font-size:1.08rem;line-height:1.85;color:#eee1cc;margin:0 0 22px}
+    .library-book-first .door-line{font-weight:700;color:#f0ca73;margin:30px 0 0;padding:18px 20px;text-align:center;border-top:1px solid rgba(212,166,65,.45);border-bottom:1px solid rgba(212,166,65,.45);font-size:1.18rem;letter-spacing:.02em}
     .library-book-first .retailer-wrap{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
     .library-book-first .shop-card{border:1px solid rgba(212,166,65,.55);background:rgba(18,8,9,.88);padding:22px}
     .library-book-first .shop-card h3{color:#f0ca73;margin:0 0 12px;font-size:1.35rem}
@@ -38,13 +38,24 @@
     .library-book-first .coming-next h2{color:#f0ca73;font-size:clamp(2rem,4vw,3rem);margin:6px 0 16px}
     .library-book-first .coming-next p{font-size:1.1rem;line-height:1.7;color:#eadfce}
     .library-book-first .coming-soon{display:inline-block;margin-top:16px;border:1px solid #dcb052;padding:12px 22px;color:#f0ca73;text-transform:uppercase;letter-spacing:.12em}
+
+    .library-book-first .formats-strip{margin-top:24px;border:1px solid rgba(212,166,65,.32);background:rgba(10,7,7,.8);padding:18px 20px}
+    .library-book-first .formats-strip h3{margin:0 0 12px;color:#f0ca73;font-size:1.08rem;text-transform:uppercase;letter-spacing:.12em}
+    .library-book-first .formats-list{display:flex;flex-wrap:wrap;gap:10px 18px;color:#eee1cc}
+    .library-book-first .formats-list span{white-space:nowrap}
+    .library-book-first .reader-voices{padding:58px 24px;text-align:center;background:#080505;border-top:1px solid rgba(212,166,65,.28)}
+    .library-book-first .reader-voices .inner{max-width:780px;margin:0 auto}
+    .library-book-first .reader-voices p:last-child{font-size:1.12rem;line-height:1.7;color:#e9ddca;font-style:italic}
+    .library-book-first .world-bridge{padding:52px 24px;text-align:center;border-top:1px solid rgba(212,166,65,.35);background:linear-gradient(180deg,#070505,#030303)}
+    .library-book-first .world-bridge h2{color:#f0ca73;font-size:clamp(1.8rem,3.5vw,2.8rem);margin:6px 0 14px}
+    .library-book-first .world-bridge p{max-width:680px;margin:0 auto 22px;color:#e9ddca;line-height:1.7}
     @media (max-width:900px){
       .library-book-first .book-spotlight{grid-template-columns:1fr;gap:34px;padding-top:44px}
       .library-book-first .book-art{min-height:auto}
       .library-book-first .retailer-wrap{grid-template-columns:1fr}
       .library-book-first .why-grid{grid-template-columns:repeat(2,1fr)}
     }
-    @media (max-width:560px){
+    @media (max-width:650px){
       .library-book-first .library-intro{padding:38px 18px 26px}
       .library-book-first .book-spotlight{padding:38px 18px}
       .library-book-first .why-grid{grid-template-columns:1fr}
@@ -86,7 +97,14 @@
       <p class="hook">The house remembers. Even if they don’t.</p>
       <p>After Aunt Maggie’s sudden death, Ezra, Astrid, and Symphony Hawthorne return to Ravenloft Manor, expecting only to settle an estate. Instead, they find a place filled with buried memories, family secrets, and questions that refuse to remain unanswered.</p>
       <p>As Ravenloft begins revealing what has long been hidden, the family must decide how far they are willing to go for one another—and whether the manor has truly been waiting for them to come home.</p>
-      <p class="door-line">Some stories begin with a chapter. This one begins with a door.</p>
+      <p class="door-line">“Some stories begin with a chapter. This one begins with a door.”</p>
+
+      <div class="formats-strip" aria-label="Available formats">
+        <h3>Available In</h3>
+        <div class="formats-list">
+          <span>Hardcover</span><span>Paperback</span><span>Kindle eBook</span><span>NOOK eBook</span>
+        </div>
+      </div>
 
       <div class="retailer-wrap" aria-label="Retailer options">
         <article class="shop-card">
@@ -124,6 +142,21 @@
         <article class="why-card"><h3>Hope in the Darkness</h3><p>Even when fear closes in, loyalty and love can become their own kind of magic.</p></article>
       </div>
     </div>
+  </section>
+
+  <section class="reader-voices">
+    <div class="inner">
+      <p class="section-kicker">Reader Voices</p>
+      <h2 class="section-heading">Stories Travel From Reader to Reader</h2>
+      <p>The greatest stories are carried from one reader to the next. Reader reviews will be featured here as the Ravenloft community grows.</p>
+    </div>
+  </section>
+
+  <section class="world-bridge">
+    <p class="section-kicker">Continue Exploring</p>
+    <h2>Meet the World Behind the Story</h2>
+    <p>Discover Ravenloft Manor, the families drawn into its mystery, and the secrets waiting inside Book One.</p>
+    <a class="button secondary" href="world.html">Explore the World</a>
   </section>
 
   <section class="coming-next">
