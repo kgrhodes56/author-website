@@ -4,10 +4,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>The World of Ravenloft | K.G. Rhodes</title>
-  <meta name="description" content="Step into the spoiler-light world of Ravenloft: The Calling and meet the manor, the families, and the mysteries at the heart of Book One.">
+  <meta name="description" content="A spoiler-light introduction to Ravenloft: The Calling, its manor, families, and mysteries.">
   <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .world-page{background:#050505;color:#f4eee2;min-height:100vh}
+    .world-page .world-hero-polished{min-height:300px;display:flex;align-items:center;text-align:center;border-bottom:1px solid rgba(207,161,64,.45);background:linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.82)),url('assets/images/ravenloft-manor-hero.jpg') center 34%/cover no-repeat;padding:72px 20px 58px}
+    .world-page .world-hero-polished h1{font-size:clamp(3rem,7vw,6.5rem);line-height:.98;margin:.35rem 0 1.2rem;color:#f0c96c}
+    .world-page .world-hero-polished .eyebrow{letter-spacing:.18em;text-transform:uppercase;color:#d9ad48;font-weight:700}
+    .world-page .world-hero-polished .hero-tagline{font-size:clamp(1rem,1.6vw,1.25rem);max-width:760px;margin:0 auto;color:#fff}
+    .world-page .world-content{max-width:1180px;margin:0 auto;padding:58px 24px 70px}
+    .world-page .world-intro-polished{max-width:900px;margin:0 auto 46px;text-align:center;font-size:1.08rem;line-height:1.8;color:#e8dfcf}
+    .world-page .world-grid-polished{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+    .world-page .world-card-polished{background:linear-gradient(145deg,rgba(37,8,13,.88),rgba(7,7,7,.96));border:1px solid rgba(207,161,64,.48);padding:30px 30px 32px;min-height:205px;box-shadow:0 14px 40px rgba(0,0,0,.28)}
+    .world-page .world-card-polished:before{content:"";display:block;width:72px;height:1px;background:#d1a13f;margin-bottom:22px}
+    .world-page .world-card-polished h2{color:#efc86c;margin:0 0 14px;font-size:1.65rem}
+    .world-page .world-card-polished p{margin:0;line-height:1.75;color:#eee6d8}
+    .world-page .manor-break-polished{min-height:320px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.7)),url('assets/images/ravenloft-manor-hero.jpg') center 62%/cover no-repeat;border-top:1px solid rgba(207,161,64,.35);border-bottom:1px solid rgba(207,161,64,.35)}
+    .world-page .manor-break-polished p{font-size:clamp(1.7rem,3.2vw,3rem);font-style:italic;color:#f4d37b;text-shadow:0 2px 10px #000;padding:20px}
+    .world-page .section-heading{text-align:center;margin-bottom:36px}
+    .world-page .section-heading .eyebrow{color:#d7a941;text-transform:uppercase;letter-spacing:.17em;font-weight:700}
+    .world-page .section-heading h2{font-size:clamp(2.2rem,4vw,3.8rem);margin:.5rem 0;color:#f0c96c}
+    .world-page .timeline-polished{display:grid;gap:18px;max-width:920px;margin:0 auto}
+    .world-page .timeline-polished article{border-left:2px solid #c99b39;padding:4px 0 4px 25px}
+    .world-page .timeline-polished h3{color:#efc86c;margin:0 0 7px;font-size:1.35rem}
+    .world-page .timeline-polished p{margin:0;line-height:1.7;color:#eee6d8}
+    .world-page .world-ending-polished{text-align:center;padding:70px 24px 80px;background:linear-gradient(180deg,#050505,#120408)}
+    .world-page .world-ending-polished h2{max-width:900px;margin:10px auto 28px;color:#f1cb70;font-size:clamp(2rem,4vw,3.8rem);line-height:1.15}
+    .world-page .world-ending-polished .eyebrow{color:#d5a43f;text-transform:uppercase;letter-spacing:.17em;font-weight:700}
+    @media(max-width:760px){.world-page .world-grid-polished{grid-template-columns:1fr}.world-page .world-hero-polished{min-height:245px;padding-top:54px}.world-page .world-content{padding:42px 18px 55px}.world-page .world-card-polished{padding:25px;min-height:0}}
+  </style>
 </head>
-<body>
+<body class="world-page">
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="index.html"><img src="assets/images/kg-rhodes-logo.png" alt="K.G. Rhodes"></a>
@@ -24,125 +51,81 @@
 </header>
 
 <main>
-  <section class="page-hero world-hero">
-    <div class="container">
+  <section class="world-hero-polished">
+    <div>
       <p class="eyebrow">Book One: The Calling</p>
       <h1>The World of Ravenloft</h1>
       <p class="hero-tagline">An old manor. A family inheritance. Secrets that refuse to remain buried.</p>
     </div>
   </section>
 
-  <section class="section-pad">
-    <div class="container world-intro">
-      <p>This spoiler-light introduction reveals only what belongs to <em>Ravenloft: The Calling</em>. Step inside, meet the people drawn together by Ravenloft, and discover the mystery without opening doors meant for later books.</p>
-    </div>
+  <section class="world-content">
+    <p class="world-intro-polished">This spoiler-light introduction reveals only what belongs to <em>Ravenloft: The Calling</em>. Step inside, meet the people drawn together by Ravenloft, and discover the mystery without opening doors meant for later books.</p>
 
-    <div class="container world-grid">
-      <article class="world-card">
-        <span class="lore-icon">🏰</span>
+    <div class="world-grid-polished">
+      <article class="world-card-polished">
         <h2>Ravenloft Manor</h2>
         <p>An old family estate filled with memory, mystery, and a presence that seems to notice everyone who crosses its threshold.</p>
       </article>
-
-      <article class="world-card">
-        <span class="lore-icon">🗝</span>
+      <article class="world-card-polished">
         <h2>The Calling</h2>
         <p>Some places are inherited. Others seem to reach for the people meant to find them. Ravenloft has been waiting.</p>
       </article>
-
-      <article class="world-card">
-        <span class="lore-icon">🕯</span>
+      <article class="world-card-polished">
         <h2>Hidden Secrets</h2>
         <p>Old rooms, forgotten memories, and unanswered questions begin to reveal a history the family never knew belonged to them.</p>
       </article>
-
-      <article class="world-card">
-        <span class="lore-icon">❤️</span>
+      <article class="world-card-polished">
         <h2>Family</h2>
         <p>At the heart of the story are the bonds people protect, the losses they carry, and the choices they make for one another.</p>
       </article>
-
-      <article class="world-card">
-        <span class="lore-icon">✨</span>
+      <article class="world-card-polished">
         <h2>Awakening</h2>
         <p>Ravenloft does not simply reveal secrets within its walls. It awakens truths hidden within the people it calls home.</p>
       </article>
-
-      <article class="world-card">
-        <span class="lore-icon">🌒</span>
+      <article class="world-card-polished">
         <h2>The Unknown</h2>
         <p>Something lies beneath the ordinary surface of Ravenloft, waiting to be understood one discovery at a time.</p>
       </article>
     </div>
   </section>
 
-  <section class="manor-break" aria-label="Ravenloft Manor in moonlight">
-    <div class="manor-break-overlay"><p>The house remembers. Even if they don't.</p></div>
+  <section class="manor-break-polished" aria-label="Ravenloft Manor in moonlight">
+    <p>The house remembers. Even if they don't.</p>
   </section>
 
-  <section class="section-pad">
-    <div class="container">
-      <p class="eyebrow center">Meet the people of Book One</p>
-      <h2 class="section-title">The Families of Ravenloft</h2>
-      <div class="world-grid">
-        <article class="world-card">
-          <span class="lore-icon">🌿</span>
-          <h2>The Hawthornes</h2>
-          <p><strong>Ezra, Astrid, and Symphony Hawthorne</strong> return to Ravenloft carrying memories, grief, and questions that the manor may finally be ready to answer.</p>
-        </article>
-
-        <article class="world-card">
-          <span class="lore-icon">❤️</span>
-          <h2>Rain Hart</h2>
-          <p>Rain brings her own strength, perspective, and place within the lives unfolding around Ravenloft.</p>
-        </article>
-
-        <article class="world-card">
-          <span class="lore-icon">🛡</span>
-          <h2>Dale Thornwick</h2>
-          <p>Dale's loyalty and courage become part of a journey larger than any one person expects.</p>
-        </article>
-
-        <article class="world-card">
-          <span class="lore-icon">🐺</span>
-          <h2>Orion Lockwood</h2>
-          <p>Orion enters Ravenloft's story carrying a name, a history, and truths that unfold in their own time.</p>
-        </article>
-
-        <article class="world-card">
-          <span class="lore-icon">🦅</span>
-          <h2>Corvin Ashford</h2>
-          <p>Corvin Ashford is connected to Ravenloft's widening mystery, though not every answer should be revealed before the story begins.</p>
-        </article>
-
-        <article class="world-card">
-          <span class="lore-icon">📖</span>
-          <h2>Meet Them in the Story</h2>
-          <p>Their histories, relationships, and choices are best discovered in the pages of <em>Ravenloft: The Calling</em>.</p>
-        </article>
-      </div>
+  <section class="world-content">
+    <div class="section-heading">
+      <p class="eyebrow">Meet the people of Book One</p>
+      <h2>The Families of Ravenloft</h2>
+    </div>
+    <div class="world-grid-polished">
+      <article class="world-card-polished"><h2>The Hawthornes</h2><p><strong>Ezra, Astrid, and Symphony Hawthorne</strong> return to Ravenloft carrying memories, grief, and questions the manor may finally be ready to answer.</p></article>
+      <article class="world-card-polished"><h2>Rain Hart</h2><p>Rain brings her own strength, perspective, and place within the lives unfolding around Ravenloft.</p></article>
+      <article class="world-card-polished"><h2>Dale Thornwick</h2><p>Dale's loyalty and courage become part of a journey larger than any one person expects.</p></article>
+      <article class="world-card-polished"><h2>Orion Lockwood</h2><p>Orion enters Ravenloft's story carrying a name, a history, and truths that unfold in their own time.</p></article>
+      <article class="world-card-polished"><h2>Corvin Ashford</h2><p>Corvin Ashford is connected to Ravenloft's widening mystery, though not every answer should be revealed before the story begins.</p></article>
+      <article class="world-card-polished"><h2>Meet Them in the Story</h2><p>Their histories, relationships, and choices are best discovered in the pages of <em>Ravenloft: The Calling</em>.</p></article>
     </div>
   </section>
 
-  <section class="timeline-section section-pad">
-    <div class="container">
-      <p class="eyebrow center">The beginning of the journey</p>
-      <h2 class="section-title">What Awaits in Book One</h2>
-      <div class="timeline">
-        <div class="timeline-item"><h3>A Family Returns</h3><p>A death brings the family back to Ravenloft Manor and into a past they do not fully understand.</p></div>
-        <div class="timeline-item"><h3>The Manor Stirs</h3><p>Memories, hidden spaces, and strange moments suggest Ravenloft is more than an ordinary inheritance.</p></div>
-        <div class="timeline-item"><h3>Secrets Surface</h3><p>Each discovery raises new questions about the family, the manor, and what has been waiting within both.</p></div>
-        <div class="timeline-item"><h3>The Calling Begins</h3><p>The journey into Ravenloft starts with one door, but not every hidden door belongs to the house.</p></div>
-      </div>
+  <section class="world-content">
+    <div class="section-heading">
+      <p class="eyebrow">The beginning of the journey</p>
+      <h2>What Awaits in Book One</h2>
+    </div>
+    <div class="timeline-polished">
+      <article><h3>A Family Returns</h3><p>A death brings the family back to Ravenloft Manor and into a past they do not fully understand.</p></article>
+      <article><h3>The Manor Stirs</h3><p>Memories, hidden spaces, and strange moments suggest Ravenloft is more than an ordinary inheritance.</p></article>
+      <article><h3>Secrets Surface</h3><p>Each discovery raises new questions about the family, the manor, and what has been waiting within both.</p></article>
+      <article><h3>The Calling Begins</h3><p>The journey into Ravenloft starts with one door, but not every hidden door belongs to the house.</p></article>
     </div>
   </section>
 
-  <section class="world-ending section-pad">
-    <div class="container">
-      <p class="eyebrow">Begin with Book One</p>
-      <h2>When Ravenloft calls, it doesn't open its doors. It opens yours.</h2>
-      <a class="button" href="book.html">Enter the Library</a>
-    </div>
+  <section class="world-ending-polished">
+    <p class="eyebrow">Begin with Book One</p>
+    <h2>When Ravenloft calls, it doesn't open its doors. It opens yours.</h2>
+    <a class="button" href="book.html">Enter the Library</a>
   </section>
 </main>
 
