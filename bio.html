@@ -1,4 +1,276 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About | K.G. Rhodes</title><meta name="description" content="Learn about K.G. Rhodes, author of the Ravenloft series."><link rel="stylesheet" href="assets/styles.css"></head><body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="assets/images/kg-rhodes-logo.png" alt="K.G. Rhodes"></a><button class="nav-toggle" aria-expanded="false" aria-label="Open navigation">Menu</button><nav class="main-nav" aria-label="Main navigation"><a href="index.html">The Manor</a><a href="book.html">The Library</a><a href="world.html">The World</a><a href="bio.html" aria-current="page">The Author</a><a href="events.html">Events</a><a href="contact.html">Contact</a></nav></div></header>
-<main><section class="page-hero"><div class="container"><p class="eyebrow">The author behind Ravenloft</p><h1>About K.G. Rhodes</h1></div></section><section class="page-content"><div class="about-grid container"><img class="about-photo" src="assets/images/kg-rhodes-author.jpg" alt="K.G. Rhodes"><article class="prose"><p>K.G. Rhodes is the author of the <em>Ravenloft</em> series, a dark fantasy world where family, ancient magic, and buried secrets collide.</p><p>Her stories explore the hidden doors within people: courage, memory, love, power, and the truths they have not yet discovered.</p><p>When she is not writing, she enjoys paranormal fiction, creative projects, and building the world of Ravenloft for readers.</p></article></div></section></main>
-<footer class="site-footer"><div class="container">© 2026 K.G. Rhodes. Creator of the Ravenloft series.</div></footer><script src="assets/main.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Author | K.G. Rhodes</title>
+  <meta name="description" content="Meet K.G. Rhodes, author of the Ravenloft series, and learn about the family, friendships, paranormal interests, and beliefs that inspire her stories.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .author-hero {
+      padding: 92px 0 62px;
+      text-align: center;
+      background:
+        linear-gradient(rgba(0,0,0,.58), rgba(0,0,0,.92)),
+        url("assets/images/ravenloft-approved-homepage.png") center 20% / cover no-repeat;
+      border-bottom: 1px solid var(--line);
+    }
+    .author-hero h1 {
+      margin: .08em 0 .18em;
+      color: var(--gold-light);
+      font-size: clamp(3rem, 7vw, 5.6rem);
+      line-height: 1;
+    }
+    .author-subtitle {
+      color: var(--cream);
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      font-style: italic;
+      margin: 0;
+    }
+    .author-intro {
+      padding: 72px 0 46px;
+    }
+    .author-intro-grid {
+      display: grid;
+      grid-template-columns: minmax(320px, 1.08fr) minmax(320px, .92fr);
+      gap: 44px;
+      align-items: center;
+    }
+    .author-photo-frame {
+      border: 1px solid var(--line);
+      padding: 10px;
+      background: #070707;
+      box-shadow: 0 24px 65px rgba(0,0,0,.55);
+    }
+    .author-photo-frame img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      object-position: center 43%;
+    }
+    .author-welcome {
+      padding: 38px;
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(72,11,21,.64), rgba(7,7,7,.98));
+      box-shadow: 0 20px 55px rgba(0,0,0,.48);
+    }
+    .author-welcome h2,
+    .author-section h2,
+    .author-closing h2 {
+      color: var(--gold-light);
+      margin-top: 0;
+      line-height: 1.15;
+    }
+    .signature-quote {
+      margin: 28px 0 0;
+      padding: 18px 0 18px 20px;
+      border-left: 2px solid var(--gold);
+      color: var(--gold-light);
+      font-style: italic;
+      font-size: 1.16rem;
+    }
+    .author-sections {
+      padding: 24px 0 76px;
+    }
+    .author-card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .author-section {
+      padding: 32px;
+      border: 1px solid var(--line);
+      background: linear-gradient(155deg, rgba(59,9,17,.58), rgba(6,6,6,.98));
+      box-shadow: 0 16px 46px rgba(0,0,0,.38);
+    }
+    .author-section p:last-child { margin-bottom: 0; }
+    .author-icon {
+      display: block;
+      font-size: 1.65rem;
+      margin-bottom: 8px;
+    }
+    .why-i-write {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 44px clamp(28px, 6vw, 72px);
+      background:
+        radial-gradient(circle at 50% 0, rgba(103,16,29,.45), transparent 62%),
+        linear-gradient(155deg, rgba(59,9,17,.58), rgba(6,6,6,.98));
+    }
+    .why-i-write p {
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.12rem;
+    }
+    .life-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px 20px;
+      padding: 0;
+      margin: 20px 0 0;
+      list-style: none;
+      color: var(--muted);
+    }
+    .life-list li {
+      padding: 11px 13px;
+      border: 1px solid rgba(199,154,69,.22);
+      background: rgba(0,0,0,.28);
+    }
+    .author-closing {
+      padding: 76px 0;
+      text-align: center;
+      border-top: 1px solid rgba(199,154,69,.25);
+      background:
+        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.92)),
+        url("assets/images/ravenloft-approved-homepage.png") center 28% / cover no-repeat;
+    }
+    .author-closing-inner {
+      max-width: 780px;
+      margin: auto;
+      padding: 38px;
+      border: 1px solid var(--line);
+      background: rgba(4,4,4,.84);
+    }
+    .author-signature {
+      color: var(--gold-light);
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    .author-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    @media (max-width: 900px) {
+      .author-intro-grid,
+      .author-card-grid {
+        grid-template-columns: 1fr;
+      }
+      .why-i-write { grid-column: auto; }
+      .author-photo-frame img { aspect-ratio: 4 / 3; }
+    }
+    @media (max-width: 560px) {
+      .author-hero { padding: 78px 0 52px; }
+      .author-intro { padding: 48px 0 30px; }
+      .author-welcome,
+      .author-section,
+      .author-closing-inner { padding: 26px; }
+      .life-list { grid-template-columns: 1fr; }
+      .author-actions .button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img src="assets/images/kg-rhodes-logo.png" alt="K.G. Rhodes"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation">Menu</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">The Manor</a>
+        <a href="book.html">The Library</a>
+        <a href="world.html">The World</a>
+        <a href="bio.html" aria-current="page">The Author</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="author-hero">
+      <div class="container">
+        <p class="eyebrow">The woman behind Ravenloft</p>
+        <h1>Meet K.G. Rhodes</h1>
+        <p class="author-subtitle">Author of the Ravenloft series</p>
+      </div>
+    </section>
+
+    <section class="author-intro">
+      <div class="container author-intro-grid">
+        <figure class="author-photo-frame">
+          <img src="assets/images/kg-rhodes-writing-desk.png" alt="K.G. Rhodes writing at her desk with her black cat nearby">
+        </figure>
+        <article class="author-welcome">
+          <p class="eyebrow">Welcome</p>
+          <h2>Welcome to my little corner of the world.</h2>
+          <p>I'm K.G. Rhodes, author of the <em>Ravenloft</em> series, and I'm so glad you're here.</p>
+          <p>When I began writing Ravenloft, I wasn't simply creating a fantasy world. I was creating a place where family, mystery, courage, hope, and the unexplained could exist together.</p>
+          <p>My greatest wish is that when you finish one of my books, you leave believing that magic may be a little more real than you thought—and that ordinary people are capable of extraordinary courage.</p>
+          <blockquote class="signature-quote">“I believe the best fantasy stories remind us that ordinary people are capable of extraordinary courage.”</blockquote>
+        </article>
+      </div>
+    </section>
+
+    <section class="author-sections">
+      <div class="container author-card-grid">
+        <article class="author-section">
+          <span class="author-icon" aria-hidden="true">❤️</span>
+          <h2>Family</h2>
+          <p>Family is the heart of everything I write.</p>
+          <p>Not because families are perfect, but because they love, protect, forgive, and fight for one another when life becomes difficult. That belief lives in every page of Ravenloft.</p>
+        </article>
+
+        <article class="author-section">
+          <span class="author-icon" aria-hidden="true">🤝</span>
+          <h2>Friends</h2>
+          <p>Dreams are rarely accomplished alone.</p>
+          <p>I've been blessed with wonderful friends who have encouraged me, celebrated every milestone, and reminded me to keep believing in this journey. Their loyalty and kindness inspire many of the friendships found throughout Ravenloft.</p>
+        </article>
+
+        <article class="author-section">
+          <span class="author-icon" aria-hidden="true">👻</span>
+          <h2>The Unexplained</h2>
+          <p>I've always believed in ghosts and been fascinated by paranormal things, old houses, family legends, and the mysteries that cannot always be explained.</p>
+          <p>I believe the world still holds wonders we do not fully understand. That curiosity inspires many of the questions explored throughout Ravenloft.</p>
+          <p>I don't expect everyone to believe exactly what I do, but I hope my stories leave readers asking one simple question: <strong>What if?</strong></p>
+        </article>
+
+        <article class="author-section">
+          <span class="author-icon" aria-hidden="true">☕</span>
+          <h2>Life Outside Ravenloft</h2>
+          <p>When I'm not writing, you'll usually find me enjoying the people and small comforts that mean the most to me.</p>
+          <ul class="life-list">
+            <li>📚 A notebook full of ideas</li>
+            <li>☕ Coffee close by</li>
+            <li>🐈 A cat keeping me company</li>
+            <li>❤️ Time with family and friends</li>
+            <li>👻 Paranormal stories and mysteries</li>
+            <li>✨ Dreaming about the next chapter</li>
+          </ul>
+        </article>
+
+        <article class="author-section why-i-write">
+          <span class="author-icon" aria-hidden="true">✍️</span>
+          <h2>Why I Write</h2>
+          <p>I write because I want readers to believe that magic is truly real.</p>
+          <p>I want them to believe that family and friends fight together and stand beside one another when darkness closes in.</p>
+          <p>Most of all, I want the characters you meet in Ravenloft to feel like people—not names on a page, but friends you cared about and missed when the story ended.</p>
+          <p><strong>If readers close one of my books feeling that way, then I've accomplished exactly what I hoped to do.</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="author-closing">
+      <div class="container">
+        <div class="author-closing-inner">
+          <p class="eyebrow">Thank You</p>
+          <h2>Thank you for stepping through the gates of Ravenloft.</h2>
+          <p>Whether you've been here from the beginning or you're discovering Ravenloft today, thank you for believing in stories and supporting an independent author.</p>
+          <p>Stories only truly come alive when they are shared with readers. I'm honored to share this world with you, and I hope you'll visit again.</p>
+          <p class="author-signature">— K.G. Rhodes</p>
+          <div class="author-actions">
+            <a class="button" href="book.html">Begin the Journey</a>
+            <a class="button secondary" href="contact.html">Come Say Hello</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">© 2026 K.G. Rhodes. Creator of the Ravenloft series.</div></footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>
