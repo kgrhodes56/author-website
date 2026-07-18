@@ -89,7 +89,21 @@
     margin-top: 15px;
     margin-bottom: 40px;
 }
+.character-title {
+    letter-spacing: 0.08em;
+    text-shadow: 0 2px 12px rgba(224, 173, 80, 0.35);
+}
 
+.character-eyebrow::before,
+.character-eyebrow::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background: #e0ad50;
+    margin: 0 12px;
+    vertical-align: middle;
+}
 .character-heading h2 {
   margin: 0 0 14px;
   color: #e3b960;
