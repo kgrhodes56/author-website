@@ -73,6 +73,21 @@
   font-weight: bold;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}.character-title {
+    color: #e0ad50;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.character-subtitle {
+    color: #f2eadc;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 
 .character-heading h2 {
