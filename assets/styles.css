@@ -75,7 +75,7 @@
   text-transform: uppercase;
 }.character-title {
     color: #e0ad50;
-    font-size: 4rem;
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
     font-weight: 700;
     text-align: center;
     margin: 0;
