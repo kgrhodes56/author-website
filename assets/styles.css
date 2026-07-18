@@ -93,7 +93,17 @@
     letter-spacing: 0.08em;
     text-shadow: 0 2px 12px rgba(224, 173, 80, 0.35);
 }
+.family-crest {
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+.family-crest img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 .character-eyebrow::before,
 .character-eyebrow::after {
     content: "";
@@ -196,20 +206,9 @@
   .character-card img {
     height: 430px;
   }
-      .character-card img {
-        height: 430px;
-    }
 
-    .family-crest {
-        text-align: center;
-        margin-bottom: 15px;
-    }
 
-    .family-crest img {
-        width: 130px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
+
+  
 }
 }
