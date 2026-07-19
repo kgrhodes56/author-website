@@ -68,6 +68,10 @@ text-shadow:0 4px 22px rgba(0,0,0,.75);
     .home-repair .repair-retailers h3{color:#edcb7b;margin:0 0 6px}
     .home-repair .repair-retailers p{margin:0;line-height:1.55;color:#d6cec1}
     .home-repair .repair-editions{display:block;text-align:center;color:#edcb7b;margin-top:18px;padding-top:14px;border-top:1px solid rgba(199,154,69,.32)}
+    .home-repair .repair-buy-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(199,154,69,.32)}
+    .home-repair .repair-buy-link{display:block;padding:12px 10px;text-align:center;border:1px solid #c79a45;background:linear-gradient(#711b28,#420b13);color:#edcb7b;text-transform:uppercase;letter-spacing:.05em;font-weight:700;font-size:.82rem}
+    .home-repair .repair-buy-link.alt{background:rgba(5,5,5,.88)}
+    .home-repair .repair-buy-link:hover{border-color:#edcb7b;color:#fff4d4}
     .home-repair .repair-invite{margin:18px 0 0;color:#d9cdb9;font-size:1rem;letter-spacing:.01em}
 
     .home-repair .repair-panels{width:min(1460px,94%);margin:0 auto;padding:28px 0 46px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
@@ -205,7 +209,11 @@ color:#9b9488;
           <div><h3>Amazon</h3><p>Kindle eBook<br>Paperback<br>Hardcover</p></div>
           <div><h3>Barnes &amp; Noble</h3><p>NOOK eBook<br>Paperback<br>Hardcover</p></div>
         </div>
-        <a class="repair-editions" href="book.html">Choose your edition →</a>
+        <div class="repair-buy-actions" aria-label="Buy Ravenloft: The Calling">
+          <a class="repair-buy-link" href="https://a.co/d/0cqHoxxt" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+          <a class="repair-buy-link alt" href="https://www.barnesandnoble.com/w/ravenloft-koren-g-rhodes/1150197414?ean=9798240931741" target="_blank" rel="noopener noreferrer">Buy at Barnes &amp; Noble</a>
+        </div>
+        <a class="repair-editions" href="book.html">View all editions →</a>
       </aside>
     </div>
   </section>
