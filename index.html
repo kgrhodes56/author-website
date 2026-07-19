@@ -247,6 +247,19 @@ color:#9b9488;
       .home-repair .featured-book-actions{display:grid;grid-template-columns:1fr;width:100%}
       .home-repair .featured-book-actions .repair-button{width:100%}
     }
+    .home-repair .featured-book-image{flex-direction:column;align-items:center}
+    .home-repair .featured-book-image-frame{width:100%;overflow:hidden}
+    .home-repair .featured-book-image-frame img{margin-bottom:-30px}
+    .home-repair .featured-book-image-caption{
+      margin:18px 0 0;
+      color:#edcb7b;
+      font-size:clamp(1rem,2vw,1.25rem);
+      font-weight:700;
+      letter-spacing:.11em;
+      line-height:1.35;
+      text-align:center;
+      text-transform:uppercase;
+    }
   </style>
 </head>
 <body class="home-repair">
@@ -380,7 +393,10 @@ color:#9b9488;
   <section class="featured-book">
   <div class="featured-book-wrap">
     <div class="featured-book-image">
-      <img src="assets/images/ravenloft-book-formats.png" alt="Ravenloft: The Calling book editions">
+      <div class="featured-book-image-frame">
+        <img src="assets/images/ravenloft-book-formats.png" alt="Ravenloft: The Calling book editions">
+      </div>
+      <p class="featured-book-image-caption">Read Wherever You Love to Read</p>
     </div>
     <div class="featured-book-copy">
       <p class="repair-eyebrow">Featured Book</p>
