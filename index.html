@@ -261,6 +261,22 @@ color:#9b9488;
       text-transform:uppercase;
     }
   </style>
+
+<style>
+.secret-key-section{position:relative;overflow:hidden;padding:92px 20px;text-align:center;border-top:1px solid rgba(199,154,69,.28);border-bottom:1px solid rgba(199,154,69,.28);background:radial-gradient(circle at 50% 42%,rgba(112,20,28,.34),transparent 34%),linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.98)),url('assets/images/ravenloft-manor-hero.jpg') center 58%/cover no-repeat}
+.secret-key-section::before{content:"";position:absolute;inset:18px;border:1px solid rgba(199,154,69,.24);pointer-events:none}
+.secret-key-inner{position:relative;z-index:1;max-width:780px;margin:auto}
+.secret-key-eyebrow{margin:0 0 14px;color:#d8ae59;font-size:.8rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+.secret-key-section h2{margin:.12em 0 .3em;color:#edcb7b;font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.05}
+.secret-key-copy{max-width:610px;margin:0 auto 28px;color:#eee4d3;font-size:1.1rem;line-height:1.7}
+.secret-key-link{display:inline-flex;align-items:center;gap:16px;padding:16px 26px;border:1px solid #c79a45;background:rgba(71,9,18,.88);color:#f3d98f;font-weight:800;letter-spacing:.11em;text-decoration:none;text-transform:uppercase;box-shadow:0 0 28px rgba(199,154,69,.12);transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+.secret-key-link:hover,.secret-key-link:focus{transform:translateY(-3px);background:#721523;box-shadow:0 0 36px rgba(199,154,69,.32)}
+.secret-key-icon{display:inline-block;font-size:2.25rem;line-height:1;filter:drop-shadow(0 0 10px rgba(237,203,123,.45));animation:keyglow 2.6s ease-in-out infinite}
+@keyframes keyglow{50%{transform:rotate(-8deg) scale(1.08);filter:drop-shadow(0 0 18px rgba(237,203,123,.75))}}
+.secret-key-whisper{margin:22px 0 0;color:#a99c87;font-style:italic}
+@media(max-width:600px){.secret-key-section{padding:72px 18px}.secret-key-section::before{inset:10px}.secret-key-link{width:100%;justify-content:center;padding:15px 14px;font-size:.86rem}}
+@media(prefers-reduced-motion:reduce){.secret-key-icon{animation:none}.secret-key-link{transition:none}}
+</style>
 </head>
 <body class="home-repair">
 <header class="repair-header">
@@ -452,6 +468,17 @@ color:#9b9488;
       <a class="repair-button alt" href="contact.html">Contact K.G. Rhodes</a>
     </article>
   </section>
+
+<section class="secret-key-section" aria-labelledby="secret-key-title">
+  <div class="secret-key-inner">
+    <p class="secret-key-eyebrow">A secret waits within Ravenloft</p>
+    <h2 id="secret-key-title">The House Left You a Key</h2>
+    <p class="secret-key-copy">Some doors appear only when Ravenloft chooses to reveal them. Take the key and unlock an exclusive glimpse of Book Two.</p>
+    <a class="secret-key-link" href="secret.html"><span class="secret-key-icon" aria-hidden="true">&#128477;&#65039;</span><span>Unlock the Secret Door</span></a>
+    <p class="secret-key-whisper">Enter quietly. The house is listening.</p>
+  </div>
+</section>
+
 </main>
  <!-- Begin Brevo Form -->
 
