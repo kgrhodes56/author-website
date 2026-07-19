@@ -14,8 +14,11 @@
     .library-book-first .library-intro h1{margin:0;color:#f0ca73;font-size:clamp(2.5rem,6vw,5.2rem);line-height:1}
     .library-book-first .library-intro p:last-child{max-width:650px;margin:16px auto 0;font-size:clamp(1rem,1.7vw,1.25rem);font-style:italic;color:#f4ead9}
     .library-book-first .book-spotlight{max-width:1180px;margin:0 auto;padding:64px 28px;display:grid;grid-template-columns:minmax(300px,46%) minmax(320px,54%);gap:48px;align-items:start}
-    .library-book-first .book-art{display:flex;align-items:center;justify-content:center;min-height:480px;background:radial-gradient(circle at center,rgba(124,25,32,.18),transparent 68%);border:1px solid rgba(212,166,65,.28);padding:18px}
+    .library-book-first .book-art{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:480px;background:radial-gradient(circle at center,rgba(124,25,32,.18),transparent 68%);border:1px solid rgba(212,166,65,.28);padding:18px}
     .library-book-first .book-art img{display:block;width:100%;max-width:650px;height:auto;object-fit:contain;filter:drop-shadow(0 22px 26px rgba(0,0,0,.65))}
+    .library-book-first .book-art-frame{width:100%;display:flex;justify-content:center;overflow:hidden}
+    .library-book-first .book-art-frame img{margin-bottom:-22px}
+    .library-book-first .book-art-caption{margin:18px 0 4px;color:#f0ca73;font-size:clamp(1rem,2vw,1.35rem);font-weight:700;letter-spacing:.12em;line-height:1.35;text-align:center;text-transform:uppercase}
     .library-book-first .book-copy .eyebrow{color:#dcb052;text-transform:uppercase;letter-spacing:.18em;font-weight:700;font-size:.8rem;margin:0 0 10px}
     .library-book-first .book-copy h2{font-size:clamp(2.2rem,4vw,4rem);color:#f0ca73;margin:0 0 18px;line-height:1.05}
     .library-book-first .hook{font-size:1.4rem;font-style:italic;color:#fff4df;border-left:3px solid #dcb052;padding:12px 0 12px 18px;margin:0 0 30px;background:linear-gradient(90deg,rgba(212,166,65,.08),transparent)}
@@ -94,7 +97,10 @@
 
   <section class="book-spotlight">
     <div class="book-art">
-      <img src="assets/images/ravenloft-book-formats.png" alt="Ravenloft: The Calling shown in hardcover and digital editions">
+      <div class="book-art-frame">
+        <img src="assets/images/ravenloft-book-formats.png" alt="Ravenloft: The Calling shown in hardcover and digital editions">
+      </div>
+      <p class="book-art-caption">Read Wherever You Love to Read</p>
     </div>
 
     <article class="book-copy">
