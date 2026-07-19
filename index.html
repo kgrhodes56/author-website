@@ -179,6 +179,74 @@ color:#9b9488;
     @media(max-width:650px){
       .home-repair .character-card img{height:430px}
     }
+    /* Keep the Featured Book artwork and copy aligned at every screen size */
+    .home-repair .featured-book{
+      border-top:1px solid rgba(199,154,69,.55);
+      border-bottom:1px solid rgba(199,154,69,.35);
+      background:#030303;
+    }
+    .home-repair .featured-book-wrap{
+      width:min(1180px,92%);
+      margin:0 auto;
+      padding:64px 0;
+      display:grid;
+      grid-template-columns:minmax(280px,.9fr) minmax(0,1.1fr);
+      gap:56px;
+      align-items:center;
+    }
+    .home-repair .featured-book-image{
+      min-width:0;
+      display:flex;
+      justify-content:center;
+    }
+    .home-repair .featured-book-image img{
+      width:100%;
+      max-width:520px;
+      height:auto;
+      object-fit:contain;
+    }
+    .home-repair .featured-book-copy{min-width:0}
+    .home-repair .featured-book-copy h2{
+      margin:10px 0 12px;
+      color:#f2eadc;
+      font-size:clamp(2.25rem,4vw,3.5rem);
+      line-height:1.05;
+    }
+    .home-repair .featured-book-number{
+      margin:0 0 18px;
+      color:#edcb7b;
+      font-size:1.1rem;
+      font-weight:700;
+    }
+    .home-repair .featured-book-hook{
+      margin:0;
+      max-width:660px;
+      color:#f2eadc;
+      font-size:1.12rem;
+      line-height:1.7;
+    }
+    .home-repair .featured-book-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:28px;
+    }
+    @media(max-width:760px){
+      .home-repair .featured-book-wrap{
+        grid-template-columns:1fr;
+        gap:32px;
+        width:90%;
+        padding:46px 0;
+      }
+      .home-repair .featured-book-image img{max-width:520px}
+      .home-repair .featured-book-copy{text-align:center}
+      .home-repair .featured-book-hook{max-width:100%}
+      .home-repair .featured-book-actions{justify-content:center}
+    }
+    @media(max-width:520px){
+      .home-repair .featured-book-actions{display:grid;grid-template-columns:1fr;width:100%}
+      .home-repair .featured-book-actions .repair-button{width:100%}
+    }
   </style>
 </head>
 <body class="home-repair">
