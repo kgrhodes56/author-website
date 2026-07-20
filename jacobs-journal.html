@@ -1,0 +1,170 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jacob's Journal | Ravenloft</title>
+  <link rel="icon" type="image/png" href="assets/images/ravenloft-emblem.png">
+  <meta name="description" content="Jacob's recovered journal page from Ravenloft Manor, entry two about Maggie.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jacob's Journal | Ravenloft">
+  <meta property="og:description" content="Recovered page two from Ravenloft Manor, Jacob's journal entry about Maggie.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .journal-page { background: #040303; color: #f2eadc; min-height: 100vh; }
+    .journal-hero { padding: 86px 0 20px; text-align: center; border-bottom: 1px solid rgba(199,154,69,.25); }
+    .journal-hero .eyebrow { margin: 0 0 10px; color: #d6a647; text-transform: uppercase; letter-spacing:.18em; font-weight:700; font-size:.88rem; }
+    .journal-hero h1 { margin: 0; color: #e6cb86; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.55rem,3vw,2.2rem); line-height:1.15; font-weight:300; letter-spacing:.08em; }
+    .journal-hero p { margin: 12px auto 0; max-width: 780px; color: #dcd1bb; font-size: clamp(.95rem,1.4vw,1.05rem); line-height:1.7; font-style: italic; }
+    .journal-shell { display: flex; justify-content: center; padding: 24px 20px 72px; }
+    .journal-sheet {
+      width: min(650px,100%);
+      padding: 42px 40px;
+      background: radial-gradient(circle at 24% 16%, rgba(243, 230, 187, 0.24), transparent 12%),
+                  radial-gradient(circle at 76% 14%, rgba(185, 148, 90, 0.14), transparent 14%),
+                  radial-gradient(circle at 18% 84%, rgba(160, 118, 62, 0.16), transparent 18%),
+                  radial-gradient(circle at 80% 76%, rgba(142, 103, 55, 0.1), transparent 16%),
+                  linear-gradient(180deg, #f2ebd3 0%, #efe4c7 12%, #f5e7d0 28%, #f1e4ca 44%, #f5ead6 100%);
+      border: 1px solid rgba(84, 42, 14, 0.65);
+      box-shadow: 0 40px 100px rgba(0,0,0,.56), inset 0 0 40px rgba(0,0,0,.14), inset 0 0 35px rgba(104, 57, 18, .08);
+      position: relative;
+      color: #36210f;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+      line-height: 1.95;
+    }
+    .journal-sheet::before,
+    .journal-sheet::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 28px;
+      background: linear-gradient(180deg, transparent, rgba(0,0,0,.08));
+      pointer-events: none;
+    }
+    .journal-sheet::before { top: -18px; transform: rotate(2deg); box-shadow: inset 0 22px 32px rgba(0,0,0,.08); }
+    .journal-sheet::after { bottom: -18px; transform: rotate(-2deg); box-shadow: inset 0 -22px 32px rgba(0,0,0,.08); }
+    .journal-sheet::after { background: linear-gradient(0deg, transparent, rgba(0,0,0,.08)); }
+    .journal-sheet::before { background: linear-gradient(180deg, transparent, rgba(0,0,0,.1)); }
+    .journal-sheet .page-edge::before,
+    .journal-sheet .page-edge::after {
+      width: 30px;
+      background: linear-gradient(90deg, rgba(0,0,0,.2), rgba(0,0,0,0) 60%);
+      filter: blur(1px);
+    }
+    .journal-sheet .page-edge::before { left: -18px; }
+    .journal-sheet .page-edge::after { right: -18px; }
+    .journal-sheet::before,
+    .journal-sheet::after,
+    .journal-sheet .page-edge::before,
+    .journal-sheet .page-edge::after {
+      border-radius: 10px;
+    }
+    .journal-sheet .page-edge { position: absolute; inset: 0; pointer-events: none; }
+    .journal-sheet .page-edge::before,
+    .journal-sheet .page-edge::after {
+      content: '';
+      position: absolute;
+      width: 28px;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(0,0,0,.12), transparent 65%);
+      top: 0;
+      filter: blur(1px);
+    }
+    .journal-sheet .page-edge::before { left: -16px; transform: rotate(-2deg); }
+    .journal-sheet .page-edge::after { right: -16px; transform: rotate(2deg); }
+    .journal-sheet .sheet-inner { position: relative; }
+    .journal-sheet .sheet-inner::after {
+      content: '';
+      position: absolute;
+      right: 26px;
+      bottom: 24px;
+      width: 72px;
+      height: 72px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath d='M25 70 C25 55 45 50 58 56 C62 40 82 34 90 48 C92 38 102 38 108 46 C110 66 82 84 68 78 C64 86 50 96 36 92 C30 88 24 82 25 70 Z M65 31 C68 26 74 25 79 28 C83 31 84 38 81 43 C74 48 68 46 64 40 C60 34 61 32 65 31 Z' fill='%236e4a2d'/%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.12;
+      filter: blur(0.5px);
+      transform: rotate(-16deg);
+      pointer-events: none;
+    }
+    .journal-sheet .small-title { margin: 0 0 1rem; color: #7c5630; letter-spacing:.42em; text-transform: uppercase; font-size:.95rem; font-weight:700; }
+    .journal-sheet h2 { margin: 0 0 .85rem; color: #4b2f11; font-size: 1.8rem; line-height:1.05; letter-spacing:.02em; }
+    .journal-sheet p { margin: 0 0 1.45rem; color: #3b2610; font-family: "Segoe Script", "Lucida Handwriting", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif; font-size: clamp(1rem,1.38vw,1.1rem); line-height: 2; }
+    .journal-sheet p em { color: #4a2f17; font-style: italic; }
+    .journal-sheet .signature { margin: 3rem 0 0; color: #45210b; font-size: 1.15rem; font-style: italic; text-align: right; letter-spacing: .02em; }
+    .journal-sheet .artifact-nav { display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; margin-top: 2.6rem; }
+    .journal-sheet .artifact-nav a { color: #3c230f; text-decoration: none; font-size: .95rem; background: rgba(255,255,255,.08); padding: 8px 14px; border: 1px solid rgba(72, 43, 20, 0.55); border-radius: 999px; }
+    .journal-sheet .artifact-nav a:hover { background: rgba(255,255,255,.13); }
+    .journal-sheet .artifact-note { margin-top: 1.4rem; color: #5b3e24; font-size: .98rem; font-style: italic; text-align: center; letter-spacing: .02em; }
+    .journal-sheet .button { display: inline-block; padding: 13px 26px; border: 1px solid rgba(88, 50, 20, 0.7); background: linear-gradient(180deg, #4a2f16 0%, #2f1a0d 100%); color: #f0d79e; text-transform: uppercase; letter-spacing:.08em; font-weight:700; text-decoration:none; box-shadow: 0 10px 18px rgba(0,0,0,.35); }
+    .journal-sheet .button:hover { background: linear-gradient(180deg, #5f3e1f 0%, #3a2412 100%); }
+    @media (max-width: 720px) {
+      .journal-sheet { padding: 32px 24px; }
+      .journal-hero { padding: 70px 0 28px; }
+      .journal-sheet h2 { font-size: clamp(2rem,7vw,3rem); }
+      .journal-shell { padding: 34px 16px 56px; }
+    }
+    @media (max-width: 520px) {
+      .journal-sheet { padding: 24px 18px; }
+      .journal-sheet .button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><img src="assets/images/kg-rhodes-logo.png" alt="K.G. Rhodes"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation">Menu</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">The Manor</a>
+      <a href="book.html">The Library</a>
+      <a href="world.html">The World</a>
+      <a href="bio.html">The Author</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="journal-page">
+  <section class="journal-hero">
+    <div class="container">
+      <h1>THE LOST PAGES OF JACOB</h1>
+      <p><em>Recovered from Ravenloft Manor.</em></p>
+    </div>
+  </section>
+  <section class="journal-shell">
+    <article class="journal-sheet">
+      <div class="page-edge"></div>
+      <div class="sheet-inner">
+        <p class="small-title">RECOVERED ENTRY II</p>
+        <h2>Maggie</h2>
+        <p>Maggie always believed restraint was strength.</p>
+        <p>She said true magic demanded patience, discipline, and sacrifice.</p>
+        <p>She looked at me with pity, as though I were something to be mended instead of understood.</p>
+        <p>She refused to teach me what I needed to know.</p>
+        <p>She locked away the rituals.</p>
+        <p>She hid the truth.</p>
+        <p>She called it protection.</p>
+        <p>I called it fear.</p>
+        <p>She never understood that power cannot be caged forever.</p>
+        <p>One day...</p>
+        <p>Even Ravenloft will kneel before it.</p>
+        <p class="signature">— Jacob</p>
+        <div class="artifact-nav">
+          <a href="world.html#journal-modal">⬅ Previous Entry</a>
+          <a href="world.html">🗝 Return to Ravenloft</a>
+          <a href="next-lost-page.html">🔒 Next Lost Page</a>
+        </div>
+        <p class="artifact-note">One page has been recovered... countless others remain lost.</p>
+      </div>
+    </article>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">© 2026 K.G. Rhodes. Creator of the Ravenloft series.</div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
