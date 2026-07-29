@@ -36,26 +36,26 @@
     .home-repair .repair-links a:hover,.home-repair .repair-links a.active{color:#edcb7b;border-color:#c79a45}
     .home-repair .repair-menu{display:none;border:1px solid #c79a45;background:#090909;color:#f2eadc;padding:8px 12px}
 
-    .home-repair .repair-hero{position:relative;min-height:620px;border-bottom:1px solid rgba(199,154,69,.45);background:#050505;overflow:hidden}
-    .home-repair .repair-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:44% center;filter:brightness(.64) contrast(1.08)}
-    .home-repair .repair-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,.96) 40%,rgba(0,0,0,.7) 65%,rgba(0,0,0,.82) 100%)}
-    .home-repair .repair-wrap{position:relative;z-index:2;width:min(1460px,94%);min-height:620px;margin:auto;display:grid;grid-template-columns:minmax(400px,1.1fr) minmax(330px,.68fr);align-items:center;gap:42px;padding:46px 0}
-    .home-repair .repair-copy{max-width:650px}
+    .home-repair .repair-hero{position:relative;min-height:72vh;border-bottom:1px solid rgba(199,154,69,.45);background:#050505;overflow:hidden}
+    .home-repair .repair-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:42% 36%;filter:brightness(.74) contrast(1.08)}
+    .home-repair .repair-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.12) 0%,rgba(0,0,0,.4) 36%,rgba(0,0,0,.72) 100%),linear-gradient(90deg,rgba(0,0,0,.16) 0%,rgba(0,0,0,.04) 28%,rgba(0,0,0,.04) 72%,rgba(0,0,0,.18) 100%)}
+    .home-repair .repair-wrap{position:relative;z-index:2;width:min(1460px,94%);margin:auto;display:grid;grid-template-columns:minmax(380px,1.1fr) minmax(300px,.68fr);align-items:center;gap:42px;padding:54px 0 40px}
+    .home-repair .repair-copy{max-width:620px}
     .home-repair .repair-eyebrow{margin:0;color:#edcb7b;text-transform:uppercase;letter-spacing:.2em;font-size:1rem}
     .home-repair .repair-title{
-margin:.12em 0 .2em;
-font-family:"Cormorant Garamond", Garamond, serif;
-color:#edcb7b;
-font-size:clamp(4.5rem,8vw,7.2rem);
-font-weight:700;
-line-height:.86;
-letter-spacing:.04em;
-text-transform:uppercase;
-text-shadow:0 4px 22px rgba(0,0,0,.75);
-}
-    .home-repair .repair-summary{max-width:610px;margin:0;font-size:clamp(1.1rem,1.55vw,1.35rem);line-height:1.65;text-shadow:0 2px 8px #000}
+      margin:.14em 0 .26em;
+      font-family:"Cormorant Garamond", Garamond, serif;
+      color:#edcb7b;
+      font-size:clamp(3rem,4.2vw,4.8rem);
+      font-weight:700;
+      line-height:1.05;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      text-shadow:0 4px 22px rgba(0,0,0,.75);
+    }
+    .home-repair .repair-summary{max-width:610px;margin:0;font-size:clamp(1rem,1vw,1.15rem);line-height:1.8;text-shadow:0 2px 8px #000}
     .home-repair .repair-summary strong{color:#edcb7b}
-    .home-repair .repair-quote{margin:24px 0 0;padding-left:18px;border-left:2px solid #c79a45;color:#f2eadc;font-size:1.28rem;line-height:1.55;font-style:italic}
+    .home-repair .repair-quote{margin:22px 0 0;padding-left:18px;border-left:2px solid #c79a45;color:#f2eadc;font-size:clamp(0.98rem,0.95vw,1.08rem);line-height:1.65;font-style:italic}
     .home-repair .repair-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
     .home-repair .repair-button{display:inline-block;border:1px solid #c79a45;padding:14px 24px;background:linear-gradient(#711b28,#420b13);color:#edcb7b;text-transform:uppercase;letter-spacing:.07em;font-weight:bold}
     .home-repair .repair-button.alt{background:rgba(5,5,5,.85)}
@@ -162,7 +162,9 @@ color:#9b9488;
   min-width:0;
   max-width:100%;
 }
-      .home-repair .repair-wrap{width:90%;padding-top:48px}
+      .home-repair .repair-hero{min-height:calc(100vh - 66px)}
+      .home-repair .repair-bg{object-position:42% 28%}
+      .home-repair .repair-wrap{width:90%;padding-top:48px;padding-bottom:38px}
       .home-repair .repair-retailers,.home-repair .repair-panels{grid-template-columns:1fr}
       .home-repair .repair-button{width:100%;text-align:center}
       .home-repair .repair-card{min-height:auto}
@@ -296,7 +298,7 @@ color:#9b9488;
 
 <main>
   <section class="repair-hero">
-    <img class="repair-bg" src="assets/images/ravenloft-manor-hero.jpg" alt="Ravenloft Manor beneath a full moon">
+    <img class="repair-bg" src="assets/images/ravenloft-manor-hero-v2.png" alt="Ravenloft Manor beneath a full moon">
     <div class="repair-shade"></div>
     <div class="repair-wrap">
       <div class="repair-copy">
