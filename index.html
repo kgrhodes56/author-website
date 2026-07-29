@@ -169,6 +169,22 @@ color:#9b9488;
       .home-repair .repair-button{width:100%;text-align:center}
       .home-repair .repair-card{min-height:auto}
     }
+    @media(max-width:600px){
+      .home-repair .repair-hero{min-height:auto;overflow:hidden;position:relative}
+      .home-repair .repair-bg{position:absolute;top:0;left:0;width:100%;height:38vh;object-fit:cover;object-position:86% 34%;filter:brightness(.82) contrast(1.05)}
+      .home-repair .repair-shade{position:absolute;top:0;left:0;width:100%;height:38vh;background:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.28));}
+      .home-repair .repair-wrap{position:relative;z-index:2;width:100%;margin:0 auto;margin-top:38vh;padding:22px 16px 26px;background:#000;border-top:1px solid rgba(199,154,69,.18);box-shadow:0 -1px 0 rgba(255,255,255,.04)}
+      .home-repair .repair-copy{max-width:100%}
+      .home-repair .repair-title{font-size:clamp(3.2rem,7vw,3.8rem);line-height:1.05;letter-spacing:.03em;margin:.12em 0 .22em;}
+      .home-repair .repair-eyebrow{font-size:.88rem;letter-spacing:.16em;margin-bottom:10px}
+      .home-repair .repair-summary{font-size:.98rem;line-height:1.55;margin-bottom:16px}
+      .home-repair .repair-quote{font-size:.95rem;line-height:1.55;margin:16px 0 0;padding-left:14px}
+      .home-repair .repair-invite{font-size:.93rem;line-height:1.55;margin-top:16px}
+      .home-repair .repair-actions{flex-direction:column;gap:10px;margin-top:20px}
+      .home-repair .repair-button{padding:10px 16px;font-size:.92rem}
+      .home-repair .repair-side{margin-top:24px;justify-self:stretch;width:100%;padding:18px}
+      .home-repair .repair-books{max-height:180px}
+    }
     /* Keep character poster titles clear of their artwork borders */
     .home-repair .character-card img{
       width:100%;
