@@ -58,21 +58,35 @@
     .library-book-first .formats-list{display:flex;flex-wrap:wrap;gap:10px 18px;color:#eee1cc}
     .library-book-first .formats-list span{white-space:nowrap}
     .library-book-first .reader-voices{padding:58px 24px;text-align:center;background:#080505;border-top:1px solid rgba(212,166,65,.28)}
-    .library-book-first .reader-voices .inner{max-width:780px;margin:0 auto}
-    .library-book-first .review-card{margin:28px auto 0;padding:30px 32px;border:1px solid rgba(212,166,65,.55);background:linear-gradient(145deg,rgba(24,8,11,.96),rgba(8,5,5,.96));box-shadow:0 18px 40px rgba(0,0,0,.35)}
+    .library-book-first .reader-voices .inner{max-width:980px;margin:0 auto}
+    .library-book-first .reader-voices .reviews-grid{display:grid;grid-template-columns:repeat(2,minmax(320px,1fr));gap:24px}
+    .library-book-first .review-card{margin:0;padding:30px 32px;border:1px solid rgba(212,166,65,.55);background:linear-gradient(145deg,rgba(24,8,11,.96),rgba(8,5,5,.96));box-shadow:0 18px 40px rgba(0,0,0,.35)}
     .library-book-first .review-stars{margin:0 0 10px;color:#f0ca73;font-size:1.35rem;letter-spacing:.16em}
     .library-book-first .review-card h3{margin:0 0 18px;color:#f4ead9;font-size:1.45rem}
-    .library-book-first .review-quote{margin:0 auto 20px;font-size:1.18rem;line-height:1.75;color:#fff4df;font-style:italic;max-width:650px}
+    .library-book-first .review-quote{margin:0 0 20px;font-size:1.18rem;line-height:1.75;color:#fff4df;font-style:italic;max-width:650px}
     .library-book-first .review-credit{margin:0 0 24px;color:#d8c7ad;font-size:.95rem;line-height:1.6}
     .library-book-first .review-card .button{display:inline-block}
     .library-book-first .world-bridge{padding:52px 24px;text-align:center;border-top:1px solid rgba(212,166,65,.35);background:linear-gradient(180deg,#070505,#030303)}
     .library-book-first .world-bridge h2{color:#f0ca73;font-size:clamp(1.8rem,3.5vw,2.8rem);margin:6px 0 14px}
     .library-book-first .world-bridge p{max-width:680px;margin:0 auto 22px;color:#e9ddca;line-height:1.7}
+    .library-book-first .testimonial-section{padding:64px 24px 56px;background:linear-gradient(180deg,rgba(8,5,15,.98),rgba(12,6,29,.96));border-top:1px solid rgba(199,154,69,.3);border-bottom:1px solid rgba(199,154,69,.22)}
+    .library-book-first .testimonial-inner{max-width:1180px;margin:0 auto}
+    .library-book-first .testimonial-eyebrow{margin:0 0 12px;color:#d8b96a;text-transform:uppercase;letter-spacing:.18em;font-weight:700;font-size:.85rem;text-align:center}
+    .library-book-first .testimonial-heading{margin:0 0 34px;color:#f0ca73;font-size:clamp(2rem,4vw,3rem);line-height:1.05;text-align:center;position:relative;padding-bottom:18px}
+    .library-book-first .testimonial-heading::after{content:'';position:absolute;left:50%;bottom:0;width:120px;height:1px;background:rgba(224,173,80,.32);transform:translateX(-50%)}
+    .library-book-first .testimonial-heading::before{content:'';position:absolute;left:50%;bottom:-9px;width:8px;height:8px;border-radius:50%;background:rgba(224,173,80,.28);transform:translateX(-50%)}
+    .library-book-first .testimonial-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;align-items:stretch}
+    .library-book-first .testimonial-card{position:relative;padding:38px 30px 28px;background:linear-gradient(160deg,rgba(50,17,62,.42),rgba(8,5,10,.96));border:1px solid rgba(199,154,69,.35);box-shadow:0 18px 38px rgba(0,0,0,.38);border-radius:18px;overflow:hidden}
+    .library-book-first .testimonial-card::before{content:"“";position:absolute;top:18px;left:18px;color:rgba(224,173,80,.16);font-size:5rem;line-height:1;font-family:Georgia,serif}
+    .library-book-first .testimonial-copy{margin:0 0 24px;color:#f0e9d3;font-size:1.08rem;line-height:1.8}
+    .library-book-first .testimonial-label{margin:0;color:#d8c7ad;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase}
     @media (max-width:900px){
       .library-book-first .book-spotlight{grid-template-columns:1fr;gap:34px;padding-top:44px}
       .library-book-first .book-art{min-height:auto}
       .library-book-first .retailer-wrap{grid-template-columns:1fr}
       .library-book-first .why-grid{grid-template-columns:repeat(2,1fr)}
+      .library-book-first .testimonial-grid{grid-template-columns:1fr}
+      .library-book-first .reader-voices .reviews-grid{grid-template-columns:1fr}
     }
     @media (max-width:650px){
       .library-book-first .library-intro{padding:38px 18px 26px}
@@ -152,6 +166,23 @@
     </article>
   </section>
 
+  <section class="testimonial-section">
+    <div class="testimonial-inner">
+      <p class="testimonial-eyebrow">Reader Reactions</p>
+      <h2 class="testimonial-heading">Ravenloft Is Calling—and Readers Are Answering</h2>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <p class="testimonial-copy">I read 50% in one day. I couldn’t put it down.</p>
+          <p class="testimonial-label">BookTok Reader</p>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-copy">I love that it’s written in an omniscient point of view. I haven’t read too many books like that, which makes it special.</p>
+          <p class="testimonial-label">BookTok Reader</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="why-section">
     <div class="why-inner">
       <p class="section-kicker">What Awaits Inside</p>
@@ -170,13 +201,22 @@
     <div class="inner">
       <p class="section-kicker">Reader Voices</p>
       <h2 class="section-heading">Stories Travel From Reader to Reader</h2>
-      <article class="review-card">
-        <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
-        <h3>“Great book”</h3>
-        <blockquote class="review-quote">“Such a great book had a hard time putting it down. Hope she writes another one.”</blockquote>
-        <p class="review-credit">— Elena Lane, Amazon reviewer<br>Paperback review · July 6, 2026</p>
-        <a class="button secondary" href="https://www.amazon.com/portal/customer-reviews/srp/-/R2HOV8GX8PZ41E/ref=cm_cr_dp_d_rvw_ttl?_encoding=UTF8&amp;ie=UTF8" target="_blank" rel="noopener noreferrer">Read the Review on Amazon</a>
-      </article>
+      <div class="reviews-grid">
+        <article class="review-card">
+          <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+          <h3>“Great book”</h3>
+          <blockquote class="review-quote">“Such a great book had a hard time putting it down. Hope she writes another one.”</blockquote>
+          <p class="review-credit">— Elena Lane, Amazon reviewer<br>Paperback review · July 6, 2026</p>
+          <a class="button secondary" href="https://www.amazon.com/portal/customer-reviews/srp/-/R2HOV8GX8PZ41E/ref=cm_cr_dp_d_rvw_ttl?_encoding=UTF8&amp;ie=UTF8" target="_blank" rel="noopener noreferrer">Read the Review on Amazon</a>
+        </article>
+        <article class="review-card">
+          <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+          <h3>“Wonderful book!”</h3>
+          <blockquote class="review-quote">“Absolutely love this book! I am reading it to my mom and it is so hard to put down. I just want to keep reading and see what happens next. It is so beautifully written. The descriptions are amazing! 100000/10! Highly recommend!”</blockquote>
+          <p class="review-credit">Verified Amazon Reviewer</p>
+          <a class="button secondary" href="https://www.amazon.com/portal/customer-reviews/srp/-/R2HOV8GX8PZ41E/ref=cm_cr_dp_d_rvw_ttl?_encoding=UTF8&amp;ie=UTF8" target="_blank" rel="noopener noreferrer">Read the Review on Amazon</a>
+        </article>
+      </div>
     </div>
   </section>
 
