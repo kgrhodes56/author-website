@@ -670,6 +670,25 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+.guest-button-inline {
+  width: auto;
+  margin-top: 0;
+  padding: 12px 18px;
+}
+
+.guest-button-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+  align-items: stretch;
+}
+
+.guest-button-inline {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
 .guest-button:hover,
 .guest-button:focus-visible {
   transform: translateY(-1px);
@@ -797,6 +816,15 @@
   .guest-feature-copy,
   .guest-card {
     padding: 22px;
+  }
+
+  .guest-button-stack {
+    flex-direction: column;
+  }
+
+  .guest-button-inline {
+    width: 100%;
+    flex-basis: auto;
   }
 
   .guest-content-grid {
