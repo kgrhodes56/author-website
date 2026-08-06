@@ -713,6 +713,10 @@
   min-height: 220px;
 }
 
+.guest-card-social {
+  grid-column: 1 / -1;
+}
+
 .guest-card h3 {
   margin: 0 0 14px;
   color: #edcb7b;
