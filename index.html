@@ -60,7 +60,8 @@
     .home-repair .repair-button{display:inline-block;border:1px solid #c79a45;padding:14px 24px;background:linear-gradient(#711b28,#420b13);color:#edcb7b;text-transform:uppercase;letter-spacing:.07em;font-weight:bold}
     .home-repair .repair-button.alt{background:rgba(5,5,5,.85)}
 
-    .home-repair .repair-side{align-self:center;justify-self:end;width:min(390px,100%);padding:22px;border:1px solid rgba(199,154,69,.65);background:rgba(3,3,3,.88);box-shadow:0 20px 55px rgba(0,0,0,.7)}
+    .home-repair .repair-side{width:min(390px,100%);padding:22px;border:1px solid rgba(199,154,69,.65);background:rgba(3,3,3,.88);box-shadow:0 20px 55px rgba(0,0,0,.7)}
+    .home-repair .repair-side-wrap{width:min(1460px,94%);margin:0 auto 48px;padding:0 0 24px;display:flex;justify-content:center}
     .home-repair .repair-books{width:100%;max-height:205px;object-fit:contain}
     .home-repair .repair-side h2{text-align:center;color:#edcb7b;font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;margin:18px 0}
     .home-repair .repair-retailers{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -145,7 +146,8 @@ color:#9b9488;
       .home-repair .repair-links.open{display:flex}.home-repair .repair-menu{display:block}
       .home-repair .repair-links a{padding:12px 0}
       .home-repair .repair-wrap{grid-template-columns:1fr;min-height:auto;padding:62px 0 36px}
-      .home-repair .repair-side{justify-self:stretch;width:100%;align-self:auto}
+      .home-repair .repair-side{width:100%}
+      .home-repair .repair-side-wrap{width:90%;margin-bottom:36px}
       .home-repair .repair-bg{object-position:58% center}
       .home-repair .repair-shade{background:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.94))}
       .home-repair .repair-panels{grid-template-columns:1fr 1fr}
@@ -182,7 +184,8 @@ color:#9b9488;
       .home-repair .repair-invite{font-size:.93rem;line-height:1.55;margin-top:16px}
       .home-repair .repair-actions{flex-direction:column;gap:10px;margin-top:20px}
       .home-repair .repair-button{padding:10px 16px;font-size:.92rem}
-      .home-repair .repair-side{margin-top:24px;justify-self:stretch;width:100%;padding:18px}
+      .home-repair .repair-side{width:100%;padding:18px}
+      .home-repair .repair-side-wrap{width:100%;padding:0 16px 20px;margin-bottom:28px}
       .home-repair .repair-books{max-height:180px}
     }
     /* Keep character poster titles clear of their artwork borders */
@@ -329,20 +332,23 @@ color:#9b9488;
         </div>
       </div>
 
-      <aside class="repair-side">
-        <img class="repair-books" src="assets/images/ravenloft-book-formats.png" alt="Ravenloft: The Calling in print and digital formats">
-        <h2>Available Wherever You Love to Read</h2>
-        <div class="repair-retailers">
-          <div><h3>Amazon</h3><p>Kindle eBook<br>Paperback<br>Hardcover</p></div>
-          <div><h3>Barnes &amp; Noble</h3><p>NOOK eBook<br>Paperback<br>Hardcover</p></div>
-        </div>
-        <div class="repair-buy-actions" aria-label="Buy Ravenloft: The Calling">
-          <a class="repair-buy-link" href="https://a.co/d/0cqHoxxt" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-          <a class="repair-buy-link alt" href="https://www.barnesandnoble.com/w/ravenloft-koren-g-rhodes/1150197414?ean=9798240931741" target="_blank" rel="noopener noreferrer">Buy at Barnes &amp; Noble</a>
-        </div>
-        <a class="repair-editions" href="book.html">View all editions →</a>
-      </aside>
     </div>
+  </section>
+
+  <section class="repair-side-wrap" aria-label="Purchase options">
+    <aside class="repair-side">
+      <img class="repair-books" src="assets/images/ravenloft-book-formats.png" alt="Ravenloft: The Calling in print and digital formats">
+      <h2>Available Wherever You Love to Read</h2>
+      <div class="repair-retailers">
+        <div><h3>Amazon</h3><p>Kindle eBook<br>Paperback<br>Hardcover</p></div>
+        <div><h3>Barnes &amp; Noble</h3><p>NOOK eBook<br>Paperback<br>Hardcover</p></div>
+      </div>
+      <div class="repair-buy-actions" aria-label="Buy Ravenloft: The Calling">
+        <a class="repair-buy-link" href="https://a.co/d/0cqHoxxt" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+        <a class="repair-buy-link alt" href="https://www.barnesandnoble.com/w/ravenloft-koren-g-rhodes/1150197414?ean=9798240931741" target="_blank" rel="noopener noreferrer">Buy at Barnes &amp; Noble</a>
+      </div>
+      <a class="repair-editions" href="book.html">View all editions →</a>
+    </aside>
   </section>
 
   <section class="guest-preview" aria-labelledby="guest-preview-title">
