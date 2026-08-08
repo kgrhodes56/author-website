@@ -506,7 +506,7 @@
 
 .guest-hero {
   padding: 94px 0 54px;
-  background: linear-gradient(rgba(4, 4, 4, 0.72), rgba(4, 4, 4, 0.95)), url("images/ravenloft-approved-homepage.png") center 30% / cover no-repeat;
+  background: linear-gradient(rgba(4, 4, 4, 0.72), rgba(4, 4, 4, 0.95)), url("images/ravenloft-manor-hero-v2.png") center 30% / cover no-repeat;
   border-bottom: 1px solid rgba(199, 154, 69, 0.3);
 }
 
@@ -539,10 +539,13 @@
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
   gap: 28px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .guest-feature-copy {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 34px;
   border: 1px solid rgba(199, 154, 69, 0.45);
   background: linear-gradient(145deg, rgba(53, 10, 16, 0.85), rgba(7, 7, 7, 0.98));
@@ -557,8 +560,8 @@
 }
 
 .guest-author-spotlight img {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   object-position: center top;
   border: 1px solid rgba(199, 154, 69, 0.44);
@@ -607,6 +610,7 @@
 
 .guest-quote-block {
   margin: 0;
+  margin-top: auto;
   padding: 18px 20px;
   border-left: 2px solid #c79a45;
   color: #f3e5c0;
