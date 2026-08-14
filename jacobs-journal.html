@@ -98,6 +98,7 @@
     .journal-sheet .artifact-nav a { color: #3c230f; text-decoration: none; font-size: .95rem; background: rgba(255,255,255,.08); padding: 8px 14px; border: 1px solid rgba(72, 43, 20, 0.55); border-radius: 999px; }
     .journal-sheet .artifact-nav a:hover { background: rgba(255,255,255,.13); }
     .journal-sheet .artifact-note { margin-top: 1.4rem; color: #5b3e24; font-size: .98rem; font-style: italic; text-align: center; letter-spacing: .02em; }
+    .journal-sheet .entry-badge { display: inline-block; margin: 0 0 .75rem; padding: 0.3rem 0.7rem; border: 1px solid rgba(93, 58, 28, 0.6); background: rgba(78, 45, 20, 0.08); color: #5f3d1f; letter-spacing: .16em; text-transform: uppercase; font-size: .76rem; font-weight: 700; }
     .journal-sheet .button { display: inline-block; padding: 13px 26px; border: 1px solid rgba(88, 50, 20, 0.7); background: linear-gradient(180deg, #4a2f16 0%, #2f1a0d 100%); color: #f0d79e; text-transform: uppercase; letter-spacing:.08em; font-weight:700; text-decoration:none; box-shadow: 0 10px 18px rgba(0,0,0,.35); }
     .journal-sheet .button:hover { background: linear-gradient(180deg, #5f3e1f 0%, #3a2412 100%); }
     @media (max-width: 720px) {
@@ -136,9 +137,21 @@
     </div>
   </section>
   <section class="journal-shell">
-    <article class="journal-sheet">
+    <article class="journal-sheet" id="journal-viewer" aria-live="polite">
       <div class="page-edge"></div>
-      <div class="sheet-inner">
+      <div class="sheet-inner" id="journal-sheet-inner"></div>
+    </article>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">© 2026 K.G. Rhodes. Creator of the Ravenloft series.</div>
+</footer>
+<script>
+  (function() {
+    const sheetInner = document.getElementById('journal-sheet-inner');
+
+    const entries = {
+      ii: `
         <p class="small-title">RECOVERED ENTRY II</p>
         <h2>Maggie</h2>
         <p>Maggie always believed restraint was strength.</p>
@@ -156,16 +169,64 @@
         <div class="artifact-nav">
           <a href="world.html#journal-modal">⬅ Previous Entry</a>
           <a href="world.html">🗝 Return to Ravenloft</a>
-          <a href="next-lost-page.html">🔒 Next Lost Page</a>
+          <a href="#" data-next-entry="iii">� Next Lost Page</a>
         </div>
         <p class="artifact-note">One page has been recovered... countless others remain lost.</p>
-      </div>
-    </article>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="container">© 2026 K.G. Rhodes. Creator of the Ravenloft series.</div>
-</footer>
+      `,
+      iii: `
+        <p class="small-title">RECOVERED ENTRY III</p>
+        <p class="entry-badge">Book Two</p>
+        <h2>Restraint</h2>
+        <p>Maggie speaks of restraint as though magic were something meant to be contained.</p>
+        <p>She believes power should be measured, guarded, and used only when the need is greater than the cost.</p>
+        <p>She is wrong.</p>
+        <p>Magic does not reward restraint.</p>
+        <p>It rewards those willing to reach beyond the boundaries others are too frightened to cross.</p>
+        <p>She has hidden the old rituals from me.</p>
+        <p>Locked them away somewhere within Ravenloft, convinced the house will keep her secrets.</p>
+        <p>But Ravenloft remembers who first gave it power.</p>
+        <p>The house will show me what she has buried.</p>
+        <p>It may resist.</p>
+        <p>It may fight.</p>
+        <p>In time, it will understand that I am not asking for permission.</p>
+        <p>One day, I will possess enough power to break every boundary placed before me.</p>
+        <p>Even Ravenloft will kneel before it.</p>
+        <p class="signature">— Jacob</p>
+        <div class="artifact-nav">
+          <a href="#" data-prev-entry="ii">⬅ Previous Entry</a>
+          <a href="world.html">🗝 Return to Ravenloft</a>
+        </div>
+        <p class="artifact-note">Book Two entry recovered from the hidden archive.</p>
+      `
+    };
+
+    function renderEntry(name) {
+      if (!sheetInner) return;
+      sheetInner.innerHTML = entries[name] || entries.ii;
+      bindEntryNavigation();
+    }
+
+    function bindEntryNavigation() {
+      const prevLink = sheetInner.querySelector('[data-prev-entry]');
+      if (prevLink) {
+        prevLink.addEventListener('click', function(event) {
+          event.preventDefault();
+          renderEntry('ii');
+        });
+      }
+
+      const nextLink = sheetInner.querySelector('[data-next-entry]');
+      if (nextLink) {
+        nextLink.addEventListener('click', function(event) {
+          event.preventDefault();
+          renderEntry('iii');
+        });
+      }
+    }
+
+    renderEntry('ii');
+  })();
+</script>
 <script src="assets/main.js"></script>
 </body>
 </html>
