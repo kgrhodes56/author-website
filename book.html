@@ -40,6 +40,56 @@
     .library-book-first .shop-card ul{list-style:none;padding:0;margin:0 0 18px;line-height:1.8;color:#f0e5d4}
     .library-book-first .shop-card .button{display:inline-block;text-align:center;width:100%;box-sizing:border-box}
     .library-book-first .button.disabled{cursor:default;opacity:.7;pointer-events:none}
+
+    .library-featured-books{padding:48px 24px 0;background:#050505;border-bottom:1px solid rgba(212,166,65,.3)}
+    .library-featured-books .library-featured-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+    .library-book-card{display:flex;flex-direction:column;height:100%;border:1px solid rgba(212,166,65,.5);background:linear-gradient(145deg,rgba(18,7,25,.94),rgba(8,7,10,.98));box-shadow:0 22px 55px rgba(0,0,0,.28)}
+    .library-book-card .book-card-cover{position:relative;display:flex;align-items:center;justify-content:center;padding:28px 28px 16px;background:radial-gradient(circle at center,rgba(136,82,179,.22),rgba(9,7,12,.12) 52%,rgba(9,7,12,0) 72%);height:420px}
+    .library-book-card .book-card-cover img{display:block;width:100%;max-width:330px;height:420px;object-fit:contain;filter:drop-shadow(0 20px 28px rgba(0,0,0,.53));margin:0 auto}
+    .library-book-card .book-two-visual{display:flex;align-items:center;justify-content:center}
+    .library-book-card .book-one-visual{display:flex;align-items:center;justify-content:center}
+    .library-book-card .device-stack{position:relative;width:100%;max-width:330px;height:420px;margin:0 auto}
+    .library-book-card .device{position:absolute;bottom:0;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:#090909;box-shadow:0 18px 32px rgba(0,0,0,.42);display:flex;align-items:center;justify-content:center}
+    .library-book-card .device img{display:block;width:100%;height:100%;object-fit:contain;padding:0;background:rgba(3,3,3,.16)}
+    .library-book-card .device-paperback{left:14%;width:64%;height:82%;transform:rotate(-5deg);background:linear-gradient(145deg,#150f16,#060709)}
+    .library-book-card .device-tablet{right:20%;width:46%;height:52%;transform:rotate(7deg);background:linear-gradient(145deg,#1c1632,#09090d)}
+    .library-book-card .device-phone{right:4%;width:22%;height:38%;transform:rotate(15deg);background:linear-gradient(145deg,#1f1e2d,#090909)}
+    .library-book-card .book-card-details{display:flex;flex-direction:column;flex:1;padding:0 28px 28px}
+    .library-book-card .book-card-number{margin:0 0 8px;color:#d5b05f;text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:700}
+    .library-book-card h2{margin:0;color:#f0ca73;font-size:clamp(1.8rem,2.6vw,2.7rem);line-height:1.12}
+    .library-book-card .book-card-summary{margin:18px 0 20px;color:#eee1cc;line-height:1.75;font-size:1.02rem}
+    .library-book-card .book-card-formats{margin-top:auto;border-top:1px solid rgba(212,166,65,.25);padding-top:18px}
+    .library-book-card .book-card-formats h3{margin:0 0 10px;color:#f0ca73;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase}
+    .library-book-card .book-card-formats ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px 12px;color:#f4e9dc;font-size:.96rem}
+    .library-book-card .book-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+    .library-book-card .button{display:inline-block;width:100%;text-align:center;box-sizing:border-box}
+    .library-book-card .book-card-badge{position:absolute;top:18px;left:50%;transform:translateX(-50%);display:inline-block;padding:8px 14px;border:1px solid rgba(212,166,65,.7);background:linear-gradient(135deg,rgba(96,42,111,.9),rgba(27,11,32,.9));color:#f9d98c;text-transform:uppercase;letter-spacing:.16em;font-size:.68rem;font-weight:700;white-space:nowrap}
+    .library-book-card.book-one-card,.library-book-card.rising-card{background:linear-gradient(145deg,rgba(18,7,25,.94),rgba(8,7,10,.98));border:1px solid rgba(212,166,65,.5);box-shadow:0 22px 55px rgba(0,0,0,.28)}
+    .library-book-card.book-one-card .book-card-cover,.library-book-card.rising-card .book-card-cover{background:radial-gradient(circle at center,rgba(136,82,179,.22),rgba(9,7,12,.12) 52%,rgba(9,7,12,0) 72%)}
+    .library-book-card.book-one-card .device-stack{max-width:330px;height:420px}
+    .library-book-card.book-one-card .device-paperback{left:14%;width:64%;height:82%;transform:rotate(-5deg);background:linear-gradient(145deg,#120d11,#050608)}
+    .library-book-card.book-one-card .device-tablet{right:20%;width:46%;height:52%;transform:rotate(7deg);background:linear-gradient(145deg,#1b1014,#0a090c)}
+    .library-book-card.book-one-card .device-phone{right:4%;width:22%;height:38%;transform:rotate(15deg);background:linear-gradient(145deg,#20181b,#090909)}
+    .library-book-card.book-one-card .device img,
+    .library-book-card.book-one-card .device-paperback img,
+    .library-book-card.book-one-card .device-tablet img,
+    .library-book-card.book-one-card .device-phone img{opacity:1;filter:none;mix-blend-mode:normal}
+    .library-book-card.book-one-card .device::before,
+    .library-book-card.book-one-card .device::after,
+    .library-book-card.book-one-card .book-card-cover::before,
+    .library-book-card.book-one-card .book-card-cover::after{content:none;display:none}
+    .library-book-card.book-one-card .book-card-number{color:#f4d89a}
+    .library-book-card.book-one-card h2{color:#f5dca0}
+    .library-book-card.book-one-card .book-card-summary{color:#f0e6d2}
+    .library-book-card.book-one-card .book-card-formats{border-top-color:rgba(212,166,65,.25)}
+    .library-book-card.book-one-card .book-card-formats h3{color:#f7df9d}
+    .library-book-card.book-one-card .book-card-formats ul{color:#f3ead7}
+    @media (max-width:760px){
+      .library-featured-books .library-featured-inner{grid-template-columns:1fr}
+      .library-book-card .book-card-actions{grid-template-columns:1fr}
+      .library-book-card .book-card-cover img{height:360px}
+    }
+
     .library-book-first .why-section{border-top:1px solid rgba(212,166,65,.35);border-bottom:1px solid rgba(212,166,65,.35);padding:58px 24px;background:linear-gradient(180deg,#090506,#050505)}
     .library-book-first .why-inner{max-width:1180px;margin:0 auto}
     .library-book-first .section-kicker{text-align:center;color:#dcb052;text-transform:uppercase;letter-spacing:.18em;font-weight:700;font-size:.8rem;margin:0 0 8px}
@@ -80,6 +130,22 @@
     .library-book-first .testimonial-card::before{content:"“";position:absolute;top:18px;left:18px;color:rgba(224,173,80,.16);font-size:5rem;line-height:1;font-family:Georgia,serif}
     .library-book-first .testimonial-copy{margin:0 0 24px;color:#f0e9d3;font-size:1.08rem;line-height:1.8}
     .library-book-first .testimonial-label{margin:0;color:#d8c7ad;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase}
+
+    .library-book-two{background:linear-gradient(180deg,#040405,#0d0911 18%,#08070d 100%);color:#f4ead9;padding:32px 0 80px;border-top:1px solid rgba(212,166,65,.35)}
+    .library-book-two .book-two-shell{max-width:1180px;margin:0 auto;padding:0 24px}
+    .library-book-two .book-two-header{margin:0 0 32px;text-align:center}
+    .library-book-two .book-two-header .eyebrow{margin:0 0 8px;color:#dcb052;text-transform:uppercase;letter-spacing:.22em;font-weight:700;font-size:.8rem}
+    .library-book-two .book-two-header h2{margin:0;color:#f0ca73;font-size:clamp(2.4rem,4vw,4rem);line-height:1.05}
+    .library-book-two .book-two-layout{display:grid;grid-template-columns:minmax(260px,38%) minmax(320px,62%);gap:42px;align-items:center;padding:18px 0 0}
+    .library-book-two .book-two-cover{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;background:radial-gradient(circle at center,rgba(102,62,156,.24),rgba(8,7,12,.2) 45%,rgba(8,7,12,.02) 72%),linear-gradient(145deg,rgba(18,7,25,.92),rgba(9,7,10,.98));border:1px solid rgba(212,166,65,.42);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+    .library-book-two .book-two-cover img{display:block;width:100%;max-width:520px;height:auto;object-fit:contain;filter:drop-shadow(0 28px 32px rgba(0,0,0,.55))}
+    .library-book-two .availability-label{display:inline-block;margin:0 auto 18px;padding:9px 18px;border:1px solid rgba(212,166,65,.65);background:linear-gradient(135deg,rgba(96,42,111,.9),rgba(27,11,32,.9));color:#f9d98c;text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;font-weight:700}
+    .library-book-two .book-two-copy{border:1px solid rgba(212,166,65,.42);background:linear-gradient(145deg,rgba(22,10,24,.94),rgba(8,7,10,.98));padding:32px 30px 26px;box-shadow:0 20px 52px rgba(0,0,0,.38)}
+    .library-book-two .description-intro{margin:0 0 18px;color:#f1d586;font-size:1.32rem;font-style:italic}
+    .library-book-two .book-two-copy p{margin:0 0 18px;font-size:1.06rem;line-height:1.8;color:#eee2cd}
+    .library-book-two .book-two-copy .closing-line{margin-top:26px;padding:16px 18px;border-top:1px solid rgba(212,166,65,.42);border-bottom:1px solid rgba(212,166,65,.42);color:#f0ca73;text-align:center;font-size:1.25rem;font-weight:700;letter-spacing:.04em}
+    .library-book-two .retailer-buttons{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+    .library-book-two .retailer-buttons .button{display:inline-block;width:100%;text-align:center;box-sizing:border-box}
     @media (max-width:900px){
       .library-book-first .book-spotlight{grid-template-columns:1fr;gap:34px;padding-top:44px}
       .library-book-first .book-art{min-height:auto}
@@ -87,12 +153,16 @@
       .library-book-first .why-grid{grid-template-columns:repeat(2,1fr)}
       .library-book-first .testimonial-grid{grid-template-columns:1fr}
       .library-book-first .reader-voices .reviews-grid{grid-template-columns:1fr}
+      .library-book-two .book-two-layout{grid-template-columns:1fr;gap:26px}
+      .library-book-two .retailer-buttons{grid-template-columns:1fr}
     }
     @media (max-width:650px){
       .library-book-first .library-intro{padding:38px 18px 26px}
       .library-book-first .book-spotlight{padding:38px 18px}
       .library-book-first .why-grid{grid-template-columns:1fr}
       .library-book-first .book-copy p{font-size:1rem}
+      .library-book-two .book-two-shell{padding:0 18px}
+      .library-book-two .book-two-copy{padding:24px 18px}
     }
   </style>
 </head>
@@ -121,51 +191,69 @@
     <p>Every journey begins with a single page.</p>
   </section>
 
-  <section class="book-spotlight">
-    <div class="book-art">
-      <div class="book-art-frame">
-        <img src="assets/images/ravenloft-book-formats.png" alt="Ravenloft: The Calling shown in hardcover and digital editions">
-      </div>
-      <p class="book-art-caption">Read Wherever You Love to Read</p>
-    </div>
-
-    <article class="book-copy">
-      <p class="eyebrow">Book One of the Ravenloft Series</p>
-      <h2>Ravenloft: The Calling</h2>
-      <p class="hook">The house remembers. Even if they don’t.</p>
-      <p>After Aunt Maggie’s sudden death, Ezra, Astrid, and Symphony Hawthorne return to Ravenloft Manor, expecting only to settle an estate. Instead, they find a place filled with buried memories, family secrets, and questions that refuse to remain unanswered.</p>
-      <p>As Ravenloft begins revealing what has long been hidden, the family must decide how far they are willing to go for one another—and whether the manor has truly been waiting for them to come home.</p>
-      <p class="door-line">“Some stories begin with a chapter. This one begins with a door.”</p>
-
-      <div class="formats-strip" aria-label="Available formats">
-        <h3>Available In</h3>
-        <div class="formats-list">
-          <span>Hardcover</span><span>Paperback</span><span>Kindle eBook</span><span>NOOK eBook</span>
+  <section class="library-featured-books" aria-label="Featured Ravenloft books">
+    <div class="library-featured-inner">
+      <article class="library-book-card book-one-card">
+        <div class="book-card-cover book-one-visual">
+          <span class="book-card-badge">Available Now</span>
+          <div class="device-stack" aria-label="Ravenloft: The Calling in paperback, tablet, and phone formats">
+            <div class="device device-paperback"><img src="assets/images/Ravenloft The Calling.png" alt="Ravenloft: The Calling paperback cover"></div>
+            <div class="device device-tablet"><img src="assets/images/Ravenloft The Calling.png" alt="Ravenloft: The Calling tablet cover"></div>
+            <div class="device device-phone"><img src="assets/images/Ravenloft The Calling.png" alt="Ravenloft: The Calling phone cover"></div>
+          </div>
         </div>
-      </div>
+        <div class="book-card-details">
+          <p class="book-card-number">Book One</p>
+          <h2>Ravenloft: The Calling</h2>
+          <p class="book-card-summary">After Aunt Maggie’s sudden death, Ezra, Astrid, and Symphony Hawthorne return to Ravenloft Manor and uncover a family legacy shaped by secrets, grief, and a house that refuses to let the past remain buried.</p>
+          <div class="book-card-formats">
+            <h3>Available Formats</h3>
+            <ul>
+              <li>Hardcover</li>
+              <li>Paperback</li>
+              <li>Kindle</li>
+              <li>NOOK</li>
+            </ul>
+          </div>
+          <div class="book-card-actions">
+            <a class="button" href="https://a.co/d/0cqHoxxt" target="_blank" rel="noopener noreferrer">Amazon</a>
+            <a class="button secondary" href="https://www.barnesandnoble.com/w/ravenloft-koren-g-rhodes/1150197414?ean=9798240931741" target="_blank" rel="noopener noreferrer">Barnes &amp; Noble</a>
+          </div>
+        </div>
+      </article>
 
-      <div class="retailer-wrap" aria-label="Retailer options">
-        <article class="shop-card">
-          <h3>Amazon</h3>
-          <ul>
-            <li>Kindle eBook</li>
-            <li>Paperback</li>
-            <li>Hardcover</li>
-          </ul>
-          <a class="button" href="https://a.co/d/0cqHoxxt" target="_blank" rel="noopener noreferrer">Begin on Amazon</a>
-        </article>
-
-        <article class="shop-card">
-          <h3>Barnes &amp; Noble</h3>
-          <ul>
-            <li>NOOK eBook</li>
-            <li>Paperback</li>
-            <li>Hardcover</li>
-          </ul>
-          <a class="button secondary" href="https://www.barnesandnoble.com/w/ravenloft-koren-g-rhodes/1150197414?ean=9798240931741" target="_blank" rel="noopener noreferrer">Begin at Barnes &amp; Noble</a>
-        </article>
-      </div>
-    </article>
+      <article class="library-book-card rising-card">
+        <div class="book-card-cover book-two-visual">
+          <span class="book-card-badge">Available Now</span>
+          <div class="device-stack" aria-label="Ravenloft: The Rising in paperback, tablet, and phone formats">
+            <div class="device device-paperback"><img src="assets/images/ravenloft-the-rising-front-cover.jpg" alt="Ravenloft: The Rising paperback cover"></div>
+            <div class="device device-tablet"><img src="assets/images/ravenloft-the-rising-front-cover.jpg" alt="Ravenloft: The Rising tablet cover"></div>
+            <div class="device device-phone"><img src="assets/images/ravenloft-the-rising-front-cover.jpg" alt="Ravenloft: The Rising phone cover"></div>
+          </div>
+        </div>
+        <div class="book-card-details">
+          <p class="book-card-number">Book Two</p>
+          <h2>Ravenloft: The Rising</h2>
+          <p class="book-card-summary">The Hawthornes survived the manor’s darkest secrets, but Ravenloft is far from finished with them.</p>
+          <p class="book-card-summary">Strange occurrences stir within its walls. Old magic awakens. And a new danger rises from the shadows.</p>
+          <p class="book-card-summary">When five family members, each carrying a piece of a forgotten legacy, are drawn back to the estate, they must confront the truth about Ravenloft and the power that has been waiting for them.</p>
+          <p class="book-card-summary">But some forces do not want to be found. And some families are never truly free.</p>
+          <p class="book-card-summary">The Rising begins.</p>
+          <div class="book-card-formats">
+            <h3>Available Formats</h3>
+            <ul>
+              <li>Paperback</li>
+              <li>Kindle</li>
+              <li>Hardcover</li>
+            </ul>
+          </div>
+          <div class="book-card-actions">
+            <a class="button" href="https://www.amazon.com/dp/B0HJT1V11W" target="_blank" rel="noopener noreferrer">Amazon</a>
+            <a class="button secondary" href="https://www.barnesandnoble.com/w/ravenloft-koren-g-rhodes/1151347473?ean=9798240887123" target="_blank" rel="noopener noreferrer">Barnes &amp; Noble</a>
+          </div>
+        </div>
+      </article>
+    </div>
   </section>
 
   <section class="testimonial-section">
@@ -243,8 +331,8 @@
   <section class="coming-next">
     <p class="section-kicker">Continue the Journey</p>
     <h2>The Story Continues</h2>
-    <p>The gates of Ravenloft have opened, but its story has only begun. Book Two of the Ravenloft series is currently in development.</p>
-    <span class="coming-soon">Coming Soon</span>
+    <p>The gates of Ravenloft have opened, but its story has only begun. Book Two of the Ravenloft series is now available.</p>
+    <span class="coming-soon">Available Now</span>
   </section>
 </main>
 
