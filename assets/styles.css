@@ -476,6 +476,18 @@
   align-items: center;
 }
 
+.guest-preview-media.wayne-manor-media {
+  grid-template-columns: 220px 280px;
+  justify-content: center;
+  gap: 60px;
+}
+
+.home-repair .repair-button.wayne-manor-cta {
+  display: block;
+  width: fit-content;
+  margin: 22px auto 0;
+}
+
 .guest-preview-author {
   width: 100%;
   max-width: 220px;
@@ -499,6 +511,16 @@
   object-fit: cover;
   border: 1px solid rgba(199, 154, 69, 0.4);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+}
+
+.guest-preview-covers img.wayne-manor-book-cover {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+  margin-inline: auto;
 }
 
 .guest-page {
@@ -541,6 +563,47 @@
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
   gap: 28px;
   align-items: stretch;
+}
+
+.guest-feature-wayne .guest-feature-grid {
+  align-items: center;
+  gap: clamp(28px, 5vw, 64px);
+}
+
+.guest-feature-wayne .guest-feature-copy {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.guest-feature-wayne .guest-author-spotlight {
+  flex-direction: column;
+  align-items: center;
+}
+
+.guest-feature-wayne .guest-author-spotlight img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+}
+
+.guest-feature-wayne .guest-covers {
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+}
+
+.guest-feature-wayne .guest-cover-card {
+  width: 100%;
+  text-align: center;
+}
+
+.guest-feature-wayne .guest-cover-card img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  margin: 0 auto 14px;
+  object-fit: contain;
 }
 
 .guest-feature-copy {
@@ -821,6 +884,12 @@
 @media (max-width: 900px) {
   .guest-preview-media {
     grid-template-columns: 1fr;
+  }
+
+  .guest-preview-media.wayne-manor-media {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 18px;
   }
 
   .guest-preview-author {
