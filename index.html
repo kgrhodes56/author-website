@@ -20,7 +20,7 @@
   <meta name="twitter:title" content="Ravenloft: The Calling | K.G. Rhodes">
   <meta name="twitter:description" content="Ancient magic awakens. Family secrets refuse to stay buried. Step through the gates of Ravenloft Manor.">
   <meta name="twitter:image" content="https://www.kgrhodesbooks.com/assets/images/ravenloft-manor-hero.jpg">
-  <link rel="stylesheet" href="assets/styles.css?v=20260719-5">
+  <link rel="stylesheet" href="assets/styles.css?v=20260719-9">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
   <style>
     /* Self-contained homepage repair */
@@ -473,7 +473,7 @@ color:#9b9488;
 
     <dialog class="rl-lightbox" aria-label="Handwritten letter from Kendra Shelly">
       <button type="button" class="rl-lightbox-close" data-rl-close aria-label="Close enlarged letter">&times;</button>
-      <img src="images/kendra-reader-letter.png" alt="Full handwritten letter from Kendra Shelly about Ravenloft: The Calling">
+      <img class="rl-lightbox-img" src="images/kendra-reader-letter.png" alt="Full handwritten letter from Kendra Shelly about Ravenloft: The Calling">
     </dialog>
   </section>
   <script>
@@ -483,6 +483,9 @@ color:#9b9488;
       if (!box || !openBtn || typeof box.showModal !== 'function') return;
       openBtn.addEventListener('click', function () { box.showModal(); });
       box.addEventListener('click', function () { box.close(); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && box.open) box.close();
+      });
     })();
   </script>
 
