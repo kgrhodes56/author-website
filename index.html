@@ -20,7 +20,7 @@
   <meta name="twitter:title" content="Ravenloft: The Calling | K.G. Rhodes">
   <meta name="twitter:description" content="Ancient magic awakens. Family secrets refuse to stay buried. Step through the gates of Ravenloft Manor.">
   <meta name="twitter:image" content="https://www.kgrhodesbooks.com/assets/images/ravenloft-manor-hero.jpg">
-  <link rel="stylesheet" href="assets/styles.css?v=20260719-3">
+  <link rel="stylesheet" href="assets/styles.css?v=20260719-5">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
   <style>
     /* Self-contained homepage repair */
@@ -439,6 +439,52 @@ color:#9b9488;
       </article>
     </div>
   </section>
+
+  <!-- Reader testimonials: to add another, copy one <article class="rl-testimonial"> block inside .rl-testimonial-list -->
+  <section class="rl-readers" aria-labelledby="rl-readers-title">
+    <div class="rl-readers-inner">
+      <h2 id="rl-readers-title">Words From Ravenloft Readers</h2>
+      <p class="rl-readers-intro">Genuine feedback from readers who have walked the halls of Ravenloft.</p>
+
+      <div class="rl-testimonial-list">
+        <article class="rl-testimonial">
+          <p class="rl-letter-heading"><span aria-hidden="true">&#10086;</span> A Letter From a Ravenloft Reader <span aria-hidden="true">&#10086;</span></p>
+
+          <div class="rl-testimonial-body">
+            <figure class="rl-letter-figure">
+              <button type="button" class="rl-letter-button" data-rl-open aria-label="Enlarge Kendra Shelly's handwritten letter">
+                <img class="rl-letter-img" src="images/kendra-reader-letter.png" width="1086" height="1448" loading="lazy" alt="Handwritten letter from Kendra Shelly about Ravenloft: The Calling on lined paper">
+              </button>
+              <figcaption>Click the letter to read it in full</figcaption>
+            </figure>
+
+            <div class="rl-testimonial-text">
+              <p class="rl-book">Ravenloft: The Calling</p>
+              <blockquote class="rl-featured-quote">
+                <p>&ldquo;The thing I thought was best is how you gave the house a personality. That was genius!&rdquo;</p>
+              </blockquote>
+              <p class="rl-attribution">&mdash; Kendra Shelly</p>
+              <p class="rl-more">Kendra loved the characters, especially Orion, and appreciated how everyone came together rather than relying on a single hero. She enjoyed the mystery so much that she ordered <em>Ravenloft: The Rising</em> and plans to recommend the series to her book club.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <dialog class="rl-lightbox" aria-label="Handwritten letter from Kendra Shelly">
+      <button type="button" class="rl-lightbox-close" data-rl-close aria-label="Close enlarged letter">&times;</button>
+      <img src="images/kendra-reader-letter.png" alt="Full handwritten letter from Kendra Shelly about Ravenloft: The Calling">
+    </dialog>
+  </section>
+  <script>
+    (function () {
+      var box = document.querySelector('.rl-lightbox');
+      var openBtn = document.querySelector('[data-rl-open]');
+      if (!box || !openBtn || typeof box.showModal !== 'function') return;
+      openBtn.addEventListener('click', function () { box.showModal(); });
+      box.addEventListener('click', function () { box.close(); });
+    })();
+  </script>
 
   <section class="guest-preview" aria-labelledby="guest-preview-title">
     <div class="container guest-preview-inner">

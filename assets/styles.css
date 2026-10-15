@@ -831,6 +831,215 @@
   text-transform: uppercase;
 }
 
+/* Words From Ravenloft Readers */
+.rl-readers {
+  --rl-teal: #0f3d42;
+  --rl-purple: #24103a;
+  --rl-silver: #c4ccd4;
+  padding: 72px 0;
+  background: linear-gradient(180deg, #050505 0%, #0a1a1e 50%, #050505 100%);
+}
+
+.rl-readers-inner {
+  width: min(960px, 92%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rl-readers h2 {
+  margin: 0 0 10px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--rl-silver);
+  letter-spacing: 0.04em;
+}
+
+.rl-readers-intro {
+  margin: 0 auto 40px;
+  max-width: 560px;
+  color: var(--muted);
+}
+
+.rl-testimonial-list {
+  display: grid;
+  gap: 32px;
+}
+
+.rl-testimonial {
+  position: relative;
+  padding: clamp(28px, 5vw, 52px);
+  background: linear-gradient(145deg, var(--rl-purple), var(--rl-teal));
+  border: 2px solid var(--rl-silver);
+  outline: 1px solid rgba(196, 204, 212, 0.5);
+  outline-offset: -12px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 4px #050505, 0 0 0 5px rgba(196, 204, 212, 0.45), 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+.rl-testimonial::before,
+.rl-testimonial::after {
+  content: "\2766";
+  position: absolute;
+  color: var(--rl-silver);
+  font-size: 1.3rem;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.rl-testimonial::before { top: 14px; left: 18px; }
+.rl-testimonial::after { bottom: 14px; right: 18px; transform: rotate(180deg); }
+
+.rl-letter-heading {
+  margin: 0 0 6px;
+  color: var(--rl-silver);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.rl-book {
+  margin: 0 0 24px;
+  color: var(--gold-light);
+  font-style: italic;
+}
+
+.rl-featured-quote {
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.rl-featured-quote p {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.4rem, 4vw, 2.1rem);
+  line-height: 1.4;
+  color: var(--cream);
+}
+
+.rl-more {
+  margin: 22px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(196, 204, 212, 0.4);
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.rl-testimonial-body {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: center;
+  text-align: left;
+}
+
+.rl-letter-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.rl-letter-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #050505;
+  border: 2px solid var(--rl-silver);
+  outline: 1px solid rgba(196, 204, 212, 0.45);
+  outline-offset: 3px;
+  cursor: zoom-in;
+  transform: rotate(-1.2deg);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+}
+
+.rl-letter-button:hover,
+.rl-letter-button:focus-visible {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 0 0 22px rgba(42, 122, 128, 0.6), 0 10px 28px rgba(0, 0, 0, 0.6);
+}
+
+.rl-letter-button:focus-visible {
+  outline: 2px solid var(--gold-light);
+}
+
+.rl-letter-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.rl-letter-figure figcaption {
+  margin-top: 16px;
+  color: var(--rl-silver);
+  font-size: 0.85rem;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+.rl-testimonial-text .rl-attribution {
+  margin-top: 4px;
+}
+
+.rl-lightbox {
+  max-width: 96vw;
+  max-height: 96vh;
+  padding: 12px;
+  background: #050505;
+  border: 2px solid var(--rl-silver);
+  outline: 1px solid rgba(196, 204, 212, 0.45);
+  outline-offset: 4px;
+  overflow: auto;
+}
+
+.rl-lightbox::backdrop {
+  background: rgba(5, 5, 12, 0.9);
+}
+
+.rl-lightbox img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(96vh - 48px);
+  margin: 0 auto;
+  cursor: zoom-out;
+}
+
+.rl-lightbox-close {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--rl-silver);
+  border-radius: 50%;
+  background: rgba(5, 5, 5, 0.85);
+  color: var(--rl-silver);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.rl-attribution {
+  margin: 0;
+  color: var(--rl-silver);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .rl-testimonial-body { grid-template-columns: 1fr; text-align: center; }
+  .rl-letter-figure { max-width: 340px; margin: 0 auto; }
+}
+
+@media (max-width: 600px) {
+  .rl-readers { padding: 48px 0; }
+  .rl-testimonial { outline-offset: -8px; }
+}
+
 .guest-photo-surface {
   width: 100%;
   min-height: 220px;
