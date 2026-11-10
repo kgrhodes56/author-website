@@ -476,6 +476,21 @@
   align-items: center;
 }
 
+.guest-preview-mark .guest-preview-media {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 2.4vw, 28px);
+  justify-items: center;
+}
+
+.guest-preview-mark .guest-preview-author,
+.guest-preview-mark .guest-preview-book-cover {
+  width: 100%;
+  max-width: 260px;
+  height: clamp(240px, 30vw, 350px);
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 .guest-preview-media.wayne-manor-media {
   grid-template-columns: 220px 280px;
   justify-content: center;
@@ -604,6 +619,31 @@
   aspect-ratio: auto;
   margin: 0 auto 14px;
   object-fit: contain;
+}
+
+.guest-feature-mark .guest-mark-bio h3 {
+  margin: 0 0 12px;
+  color: #edcb7b;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.5rem;
+}
+
+.guest-feature-mark .guest-mark-bio p {
+  margin: 0 0 14px;
+  color: #e9ddca;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.guest-feature-mark .guest-covers {
+  align-items: start;
+}
+
+.guest-feature-mark .guest-cover-card img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .guest-feature-copy {
@@ -1332,6 +1372,21 @@ html:has(.rl-lightbox[open]) {
     object-position: center center;
   }
 
+  .guest-preview-mark .guest-preview-media {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .guest-preview-mark .guest-preview-author {
+    grid-column: 1 / -1;
+    width: 68%;
+    height: 260px;
+  }
+
+  .guest-preview-mark .guest-preview-book-cover {
+    height: clamp(190px, 58vw, 280px);
+  }
+
   .guest-preview-covers {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1344,6 +1399,16 @@ html:has(.rl-lightbox[open]) {
   .guest-feature-copy,
   .guest-card {
     padding: 22px;
+  }
+
+  .guest-feature-mark .guest-covers {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .guest-feature-mark .guest-cover-card img {
+    width: 280px;
+    max-width: 100%;
+    margin-inline: auto;
   }
 
   .guest-button-stack {
