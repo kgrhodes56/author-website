@@ -462,11 +462,66 @@
   font-weight: 700;
 }
 
+.guest-preview-iannis .guest-preview-subtitle {
+  margin: -8px 0 16px;
+  color: #d9cdb9;
+  font-size: 0.96rem;
+}
+
+.guest-preview-iannis .guest-preview-book-title {
+  margin: 0 0 14px;
+  color: #edcb7b;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.guest-preview-iannis .guest-preview-book-title em {
+  color: #f2eadc;
+  font-weight: 400;
+}
+
 .guest-preview-intro {
   margin: 0 0 22px;
   max-width: 720px;
   color: #e8dfcf;
   line-height: 1.75;
+}
+
+.guest-preview-iannis .guest-preview-media {
+  grid-template-columns: minmax(0, 220px) minmax(0, 280px);
+  justify-content: center;
+  gap: clamp(18px, 5vw, 48px);
+}
+
+.guest-preview-iannis .guest-preview-author {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.guest-preview-iannis .guest-preview-book-cover {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border: 1px solid rgba(199, 154, 69, 0.4);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+}
+
+.guest-preview-iannis .guest-preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.guest-preview-iannis .guest-preview-actions .repair-button {
+  text-align: center;
 }
 
 .guest-preview-media {
@@ -580,45 +635,74 @@
   align-items: stretch;
 }
 
-.guest-feature-wayne .guest-feature-grid {
+.guest-feature-iannis .guest-feature-grid {
   align-items: center;
   gap: clamp(28px, 5vw, 64px);
 }
 
-.guest-feature-wayne .guest-feature-copy {
+.guest-feature-iannis .guest-feature-copy {
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.guest-feature-wayne .guest-author-spotlight {
+.guest-feature-iannis .guest-author-spotlight {
   flex-direction: column;
   align-items: center;
 }
 
-.guest-feature-wayne .guest-author-spotlight img {
+.guest-feature-iannis .guest-author-spotlight img {
   width: 280px;
   max-width: 100%;
   height: auto;
 }
 
-.guest-feature-wayne .guest-covers {
+.guest-feature-iannis .guest-covers {
   grid-template-columns: minmax(0, 1fr);
   justify-items: center;
 }
 
-.guest-feature-wayne .guest-cover-card {
+.guest-feature-iannis .guest-cover-card {
   width: 100%;
   text-align: center;
 }
 
-.guest-feature-wayne .guest-cover-card img {
+.guest-feature-iannis .guest-cover-card img {
   width: 280px;
   max-width: 100%;
   height: auto;
   aspect-ratio: auto;
   margin: 0 auto 14px;
   object-fit: contain;
+}
+
+.guest-feature-iannis .guest-author-subtitle {
+  margin: 10px 0 0;
+  color: #e9ddca;
+  line-height: 1.6;
+}
+
+.guest-iannis-bio {
+  grid-column: 1 / -1;
+}
+
+.guest-iannis-bio p:not(.guest-bio-intro) {
+  margin: 0 0 14px;
+  color: #e9ddca;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.guest-iannis-closing {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(199, 154, 69, 0.35);
+  color: #f4e8c8;
+  text-align: center;
+}
+
+.guest-iannis-closing p {
+  margin: 0 0 10px;
 }
 
 .guest-feature-mark .guest-mark-bio h3 {
@@ -1334,6 +1418,12 @@ html:has(.rl-lightbox[open]) {
 @media (max-width: 900px) {
   .guest-preview-media {
     grid-template-columns: 1fr;
+  }
+
+  .guest-preview-iannis .guest-preview-media {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 18px;
   }
 
   .guest-preview-media.wayne-manor-media {

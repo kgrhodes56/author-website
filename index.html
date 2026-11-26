@@ -288,6 +288,35 @@ color:#9b9488;
       text-transform:uppercase;
     }
   </style>
+  <style>
+    .home-repair .guest-preview-iannis .guest-preview-media {
+      display: flex;
+      width: fit-content;
+      max-width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-inline: auto;
+    }
+    .home-repair .guest-preview-iannis .guest-preview-media img {
+      flex: 0 1 auto;
+      width: auto;
+      height: 440px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+    @media (max-width: 900px) {
+      .home-repair .guest-preview-iannis .guest-preview-media {
+        flex-direction: column;
+      }
+      .home-repair .guest-preview-iannis .guest-preview-media img {
+        width: auto;
+        height: auto;
+        max-width: min(100%, 300px);
+        max-height: min(440px, 62vh);
+      }
+    }
+  </style>
 
 <style>
 .secret-key-section{position:relative;overflow:hidden;padding:92px 20px;text-align:center;border-top:1px solid rgba(199,154,69,.28);border-bottom:1px solid rgba(199,154,69,.28);background:radial-gradient(circle at 50% 42%,rgba(112,20,28,.34),transparent 34%),linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.98)),url('assets/images/ravenloft-manor-hero.jpg') center 58%/cover no-repeat}
@@ -501,20 +530,24 @@ color:#9b9488;
     </a>
   </section>
 
-  <section class="guest-preview" aria-labelledby="guest-preview-title">
+  <section class="guest-preview guest-preview-iannis" aria-labelledby="guest-preview-title">
     <div class="container guest-preview-inner">
       <div class="guest-preview-copy">
         <p class="guest-preview-eyebrow">Guests at Ravenloft</p>
-        <h2 id="guest-preview-title">Monthly Indie Author Spotlight</h2>
-        <p class="guest-preview-feature">November 2026 Indie Author Spotlight: Andrea Miller</p>
-        <p class="guest-preview-intro">November Indie Author Spotlight — Meet Andrea Miller, author of Delia Luna: Wolf Bitten, a supernatural fantasy adventure set in a Wild West cosmos where the paranormal is dangerously real.</p>
-        <div class="guest-preview-media" style="justify-items: center;">
-          <img class="guest-preview-author" src="images/Andrea%20Miller%20Avatar%20B%20Red%20Picasa.jpg" alt="Portrait of Andrea Miller">
-          <div class="guest-preview-covers" aria-label="Featured book by Andrea Miller" style="grid-template-columns: minmax(0, 1fr); justify-items: center;">
-            <img src="images/Delia%20Luna%20Cover%20ebook%20PNG.png" alt="Delia Luna: Wolf Bitten cover by Andrea Miller" style="width: 280px; max-width: 100%; height: auto; aspect-ratio: auto; object-fit: contain;">
-          </div>
+        <h2 id="guest-preview-title">December Featured Indie Author</h2>
+        <p class="guest-preview-feature">Iannis Aliferis</p>
+        <p class="guest-preview-subtitle">Novelist | Award-Winning Screenwriter | Filmmaker</p>
+        <p class="guest-preview-book-title">A Killer Case: A Samantha Rutledge Adventure<br><em>Sam's latest case is a killer.</em></p>
+        <p class="guest-preview-intro">Meet our December Featured Indie Author, Iannis Aliferis, a Greek-Australian novelist, award-winning screenwriter and filmmaker whose passion for pulp fiction, noir thrillers and unconventional love stories brings cinematic storytelling to the written page.<br><br>His debut novel, <em>A Killer Case: A Samantha Rutledge Adventure</em>, blends pulp noir, romance and crime thrills.</p>
+        <div class="guest-preview-media">
+          <img class="guest-preview-author" src="images/Iannis%20Alferis%20photo.jpg" alt="Portrait of Iannis Aliferis">
+          <img class="guest-preview-book-cover" src="images/Iannis%20Book%20Cover%20e-book%20png.png" alt="A Killer Case: A Samantha Rutledge Adventure cover by Iannis Aliferis">
         </div>
-        <a class="repair-button alt" href="guests.html#andrea-miller" style="display: block; width: fit-content; margin: 22px auto 0;">Meet November's Featured Author</a>
+        <div class="guest-preview-actions">
+          <a class="repair-button alt" href="guests.html#iannis-aliferis">Meet the Author</a>
+          <a class="repair-button" href="https://www.amazon.com/dp/B0G2ZXRCB3" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+          <a class="repair-button alt" href="https://www.amazon.com/author/iannisaliferis" target="_blank" rel="noopener noreferrer">Visit Author's Amazon Page</a>
+        </div>
       </div>
     </div>
   </section>
