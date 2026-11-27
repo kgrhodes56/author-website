@@ -875,7 +875,7 @@ color:#9b9488;
         <span class="sib-form-message-panel__inner-text">
 
 
-                Welcome to the Ravenloft Circle! Check your inbox for your exclusive preview of Ravenloft: The Calling. If you don&#39;t see it within a few minutes, be sure to check your spam or promotions folder.
+                You&#39;re one step away from entering the Ravenloft Circle! Please check your inbox and click the confirmation link to complete your subscription. Once confirmed, you&#39;ll receive your exclusive FREE preview of Ravenloft: The Calling. If you don&#39;t see the confirmation email, please check your spam or promotions folder.
              
             
           </span>
@@ -890,7 +890,7 @@ color:#9b9488;
 
 
           <div class="sib-form-block" style="font-family:Helvetica, sans-serif; font-size:32px; font-weight:700; text-align:left; color:#3C4858; background-color:transparent; text-align:left">
-            <p>ENTER THE RAVENLOFT CIRCLE</p>
+            <p>✨ Enter the Ravenloft Circle</p>
           </div>
 
 
@@ -904,8 +904,9 @@ color:#9b9488;
 
           <div class="sib-form-block" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#3C4858; background-color:transparent; text-align:left">
             <div class="sib-text-form-block">
-              <p>Join the Ravenloft Circle and receive the Prologue + Chapter One of <em>Ravenloft: The Calling</em> FREE.</p>
-              <p>You'll also get Ravenloft news, new release updates, exclusive extras, free reads, guest author recommendations, and occasional glimpses behind the doors of Ravenloft.</p>
+              <p><strong>Step through the gates of Ravenloft Manor.</strong></p>
+              <p>Receive a <strong>FREE preview of </strong><em><strong>Ravenloft: The Calling</strong></em> featuring the <strong>Prologue and Chapter One</strong>.</p>
+              <p>Be the first to discover <strong>Book Two</strong>, exclusive artwork, behind-the-scenes writing updates, and special announcements from <strong>K.G. Rhodes</strong>.</p>
             </div>
           </div>
 
@@ -950,6 +951,30 @@ color:#9b9488;
 
         </div>
 
+
+
+        <div style="padding: 8px 0;">
+
+
+          <div class="sib-captcha sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <script>
+                  function handleCaptchaResponse() {
+                    var event = new Event('captchaChange');
+                    document.getElementById('sib-captcha').dispatchEvent(event);
+                    window.grecaptcha = window.turnstile;
+                  }
+                </script>
+                <div class="cf-turnstile g-recaptcha" data-sitekey="0x4AAAAAAGVH5BYlUdhWgDX8" id="sib-captcha" data-callback="handleCaptchaResponse" data-language="en"></div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
+              </label>
+            </div>
+          </div>
+
+
+        </div>
 
 
         <div style="padding: 8px 0;">
@@ -1030,6 +1055,7 @@ color:#9b9488;
 
 
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 
 
